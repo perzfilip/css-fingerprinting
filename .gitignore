@@ -482,3 +482,5 @@ instance/*
 .webassets-cache
 .env
 
+# config files
+config.py
