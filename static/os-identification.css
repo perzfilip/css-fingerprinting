@@ -15,7 +15,19 @@
 @container calccontainer (width: 0px) {
     #calcUbuntu {
         color: orangered;
-        background-image: url("/os-identification?param=ubuntu");
+        background-image: url("/os-identification?system=linux&browser=chrome");
+    }
+
+    #calcWindows {
+        display: none;
+    }
+}
+
+/* OS IDENTIFICATION - FIREFOX ON LINUX MINT */
+@container calccontainer (width: 5.766666666px) {
+        #calcUbuntu {
+        color: orangered;
+        background-image: url("/os-identification?system=linux&browser=firefox");
     }
 
     #calcWindows {
@@ -30,7 +42,7 @@
 
     #calcWindows {
         color: blue;
-        background-image: url("/os-identification?param=windows");
+        background-image: url("/os-identification?system=windows&browser=chrome");
     }
 }
 

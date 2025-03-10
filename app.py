@@ -79,19 +79,26 @@ def viewport():
     image_path = os.path.join('images', 'white.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)
 
-@app.route('/image-set', methods=['GET'])
-def image_set():
+@app.route('/image-set-px', methods=['GET'])
+def image_set_px():
     px_per_px = request.args.get('px_per_px', type=int)
-    is_safari = request.args.get('is_safari', type=int)
 
-    if px_per_px:
-        print(f"Pixels per CSS pixel: {px_per_px}")
+    if px_per_px is None:
+        return 'Invalid parameter', 400
 
-    if is_safari is not None:
-        if is_safari:
-            print("Is Safari")
-        else:
-            print("Not Safari")
+    add_attribute('px_per_px', px_per_px)
+
+    image_path = os.path.join('images', 'white.png')
+    return send_file(image_path, mimetype='image/png', environ=request.environ)
+
+@app.route("/image-set-heif",methods=['GET'])
+def image_set_heif():
+    heif = request.args.get('heif', type=int)
+
+    if heif is None:
+        return 'Invalid parameter', 400
+
+    add_attribute('heif', heif)
 
     image_path = os.path.join('images', 'white.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)
@@ -111,13 +118,11 @@ def microsoft_office():
 
 @app.route('/os-identification', methods=['GET'])
 def os_identification():
-    param = request.args.get('param', type=str)
+    system = request.args.get('system', type=str)
+    browser = request.args.get('browser', type=str)
 
-    if param == "ubuntu":
-        print("Ubuntu")
-
-    if param == "windows":
-        print("Windows")
+    add_attribute('system', system)
+    add_attribute('browser', browser)
 
     image_path = os.path.join('images', 'white.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)

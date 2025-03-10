@@ -1,7 +1,7 @@
 #container-image-set1 {
-    background-image: -webkit-image-set(url("/image-set?px_per_px=1") 1x, url("image-set?px_per_px=2") 2x, url("image-set?px_per_px=3") 3x);
+    background-image: -webkit-image-set(url("/image-set-px?px_per_px=1") 1x, url("image-set-px=?px_per_px=2") 2x, url("image-set-px?px_per_px=3") 3x);
 }
 
 #container-image-set2 {
-    background-image: -webkit-image-set(url("/image-set?is_safari=1") type("image/heif"), url("/image-set?is_safari=0") type("image/png"));
+    background-image: -webkit-image-set(url("/image-set-heif?heif=1") type("image/heif"), url("/image-set-heif?heif=0") type("image/png"));
 }

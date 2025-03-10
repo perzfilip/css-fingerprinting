@@ -1,0 +1,15 @@
+/*todo ogarnac jakie tu roznice sa miedzy przegladarkami i dobrac zakresy*/
+#button-wrapper {
+    width: fit-content;
+}
+
+#button-container {
+    container-type: inline-size;
+    container-name: button-container;
+}
+
+@container button-container (width > 400px) {
+    p {
+        background-color: orangered;
+    }
+}
