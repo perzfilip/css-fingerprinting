@@ -9,40 +9,357 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='microsoft-office.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='os-identification.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='button-width.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='font-detection.css') }}">
     <title>Main Page</title>
     <style>
-
 
 
     </style>
 </head>
 <body>
-    <h1>Hello, Fingerprinting!</h1>
+<h1>Hello, Fingerprinting!</h1>
 
-    <!--viewport width leak-->
-      <div id="container-viewport">
-          <p id="pviewport">Viewport leak</p>
-      </div>
+<!-- viewport width leak -->
+<div id="container-viewport">
+    <p id="pviewport">Viewport leak</p>
+</div>
 
-    <!--image-set leak-->
-    <div id="container-image-set1">
-        <p id="pimage-set">Image set leak</p>
+<!-- image-set leak -->
+<div id="container-image-set1">
+    <p id="pimage-set">Image set leak</p>
+</div>
+<div id="container-image-set2">
+    <p id="pimage-set">Image set leak</p>
+</div>
+<div id="container-microsoft-office">
+    <p id="pmicrosoft-office">Microsoft Office font leak</p>
+</div>
+<div class="wrapper">
+    <div id="targetCalc"></div>
+    <div id="containerCalc"><span id="calcWindows">Windows 11</span><span id="calcUbuntu">Linux</span></div>
+</div>
+<div id="button-wrapper">
+    <div id="button-container">
+        <p>Lorem!</p>
     </div>
-    <div id="container-image-set2">
-        <p id="pimage-set">Image set leak</p>
-    </div>
-    <div id="container-microsoft-office">
-        <p id="pmicrosoft-office">Microsoft Office font leak</p>
-    </div>
-    <div class="wrapper">
-        <div id="targetCalc"></div>
-        <div id="containerCalc"><span id="calcWindows">Windows 11</span><span id="calcUbuntu">Linux</span></div>
-    </div>
-    <div id="button-wrapper">
-        <div id="button-container">
-            <p>Lorem!</p>
+    <button>dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</button>
+</div>
+
+<!-- font detection -->
+<div id="font-detection">
+    <div class="font-detection-wrapper">
+        <div id="font-sans-serif-thin-container">
+            <p class="tested-font">sans-serif-thin</p>
         </div>
-        <button></button>
+        <p id="font-sans-serif-thin-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
     </div>
+    <div class="font-detection-wrapper">
+        <div id="font-arno-pro-container">
+            <p class="tested-font">ARNO PRO</p>
+        </div>
+        <p id="font-arno-pro-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-agency-fb-container">
+            <p class="tested-font">Agency FB</p>
+        </div>
+        <p id="font-agency-fb-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-arabic-typesetting-container">
+            <p class="tested-font">Arabic Typesetting</p>
+        </div>
+        <p id="font-arabic-typesetting-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-arial-unicode-ms-container">
+            <p class="tested-font">Arial Unicode MS</p>
+        </div>
+        <p id="font-arial-unicode-ms-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-avantgarde-bk-bt-container">
+            <p class="tested-font">AvantGarde Bk BT</p>
+        </div>
+        <p id="font-avantgarde-bk-bt-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-bankgothic-md-bt-container">
+            <p class="tested-font">BankGothic Md BT</p>
+        </div>
+        <p id="font-bankgothic-md-bt-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-batang-container">
+            <p class="tested-font">Batang</p>
+        </div>
+        <p id="font-batang-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-bitstream-vera-sans-mono-container">
+            <p class="tested-font">Bitstream Vera Sans Mono</p>
+        </div>
+        <p id="font-bitstream-vera-sans-mono-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-calibri-container">
+            <p class="tested-font">Calibri</p>
+        </div>
+        <p id="font-calibri-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-century-container">
+            <p class="tested-font">Century</p>
+        </div>
+        <p id="font-century-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-century-gothic-container">
+            <p class="tested-font">Century Gothic</p>
+        </div>
+        <p id="font-century-gothic-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-clarendon-container">
+            <p class="tested-font">Clarendon</p>
+        </div>
+        <p id="font-clarendon-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-eurostile-container">
+            <p class="tested-font">EUROSTILE</p>
+        </div>
+        <p id="font-eurostile-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-franklin-gothic-container">
+            <p class="tested-font">Franklin Gothic</p>
+        </div>
+        <p id="font-franklin-gothic-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-futura-bk-bt-container">
+            <p class="tested-font">Futura Bk BT</p>
+        </div>
+        <p id="font-futura-bk-bt-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-futura-md-bt-container">
+            <p class="tested-font">Futura Md BT</p>
+        </div>
+        <p id="font-futura-md-bt-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-gotham-container">
+            <p class="tested-font">GOTHAM</p>
+        </div>
+        <p id="font-gotham-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-gill-sans-container">
+            <p class="tested-font">Gill Sans</p>
+        </div>
+        <p id="font-gill-sans-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-helv-container">
+            <p class="tested-font">HELV</p>
+        </div>
+        <p id="font-helv-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-haettenschweiler-container">
+            <p class="tested-font">Haettenschweiler</p>
+        </div>
+        <p id="font-haettenschweiler-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-helvetica-neue-container">
+            <p class="tested-font">Helvetica Neue</p>
+        </div>
+        <p id="font-helvetica-neue-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-humanst521-bt-container">
+            <p class="tested-font">Humanst521 BT</p>
+        </div>
+        <p id="font-humanst521-bt-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-leelawadee-container">
+            <p class="tested-font">Leelawadee</p>
+        </div>
+        <p id="font-leelawadee-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-letter-gothic-container">
+            <p class="tested-font">Letter Gothic</p>
+        </div>
+        <p id="font-letter-gothic-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-levenim-mt-container">
+            <p class="tested-font">Levenim MT</p>
+        </div>
+        <p id="font-levenim-mt-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-lucida-bright-container">
+            <p class="tested-font">Lucida Bright</p>
+        </div>
+        <p id="font-lucida-bright-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-lucida-sans-container">
+            <p class="tested-font">Lucida Sans</p>
+        </div>
+        <p id="font-lucida-sans-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-menlo-container">
+            <p class="tested-font">Menlo</p>
+        </div>
+        <p id="font-menlo-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-ms-mincho-container">
+            <p class="tested-font">MS Mincho</p>
+        </div>
+        <p id="font-ms-mincho-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-ms-outlook-container">
+            <p class="tested-font">MS Outlook</p>
+        </div>
+        <p id="font-ms-outlook-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-ms-reference-specialty-container">
+            <p class="tested-font">MS Reference Specialty</p>
+        </div>
+        <p id="font-ms-reference-specialty-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-ms-ui-gothic-container">
+            <p class="tested-font">MS UI Gothic</p>
+        </div>
+        <p id="font-ms-ui-gothic-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-mt-extra-container">
+            <p class="tested-font">MT Extra</p>
+        </div>
+        <p id="font-mt-extra-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-myriad-pro-container">
+            <p class="tested-font">MYRIAD PRO</p>
+        </div>
+        <p id="font-myriad-pro-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-marlett-container">
+            <p class="tested-font">Marlett</p>
+        </div>
+        <p id="font-marlett-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-meiryo-ui-container">
+            <p class="tested-font">Meiryo UI</p>
+        </div>
+        <p id="font-meiryo-ui-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-microsoft-uighur-container">
+            <p class="tested-font">Microsoft Uighur</p>
+        </div>
+        <p id="font-microsoft-uighur-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-minion-pro-container">
+            <p class="tested-font">Minion Pro</p>
+        </div>
+        <p id="font-minion-pro-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-monotype-corsiva-container">
+            <p class="tested-font">Monotype Corsiva</p>
+        </div>
+        <p id="font-monotype-corsiva-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-pmingliu-container">
+            <p class="tested-font">PMingLiU</p>
+        </div>
+        <p id="font-pmingliu-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-pristina-container">
+            <p class="tested-font">Pristina</p>
+        </div>
+        <p id="font-pristina-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-scriptina-container">
+            <p class="tested-font">SCRIPTINA</p>
+        </div>
+        <p id="font-scriptina-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-segoe-ui-light-container">
+            <p class="tested-font">Segoe UI Light</p>
+        </div>
+        <p id="font-segoe-ui-light-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-serifa-container">
+            <p class="tested-font">Serifa</p>
+        </div>
+        <p id="font-serifa-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-simhei-container">
+            <p class="tested-font">SimHei</p>
+        </div>
+        <p id="font-simhei-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-small-fonts-container">
+            <p class="tested-font">Small Fonts</p>
+        </div>
+        <p id="font-small-fonts-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-staccato222-bt-container">
+            <p class="tested-font">Staccato222 BT</p>
+        </div>
+        <p id="font-staccato222-bt-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-trajan-pro-container">
+            <p class="tested-font">TRAJAN PRO</p>
+        </div>
+        <p id="font-trajan-pro-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-univers-ce-55-medium-container">
+            <p class="tested-font">Univers CE 55 Medium</p>
+        </div>
+        <p id="font-univers-ce-55-medium-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-vrinda-container">
+            <p class="tested-font">Vrinda</p>
+        </div>
+        <p id="font-vrinda-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+    <div class="font-detection-wrapper">
+        <div id="font-zwadobef-container">
+            <p class="tested-font">ZWAdobeF</p>
+        </div>
+        <p id="font-zwadobef-text">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>
+    </div>
+</div>
+
 </body>
 </html>

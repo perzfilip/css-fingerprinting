@@ -1,0 +1,1019 @@
+#font-detection {
+    font-family: Arial, sans-serif;
+}
+
+.tested-font {
+    background-color: blue;
+}
+
+.font-detection-wrapper {
+    width: fit-content;
+}
+
+/* Arial, sans-serif */
+#font-arial-container {
+    container-type: inline-size;
+    container-name: font-arial-container;
+}
+
+#font-arial-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-arial-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* sans-serif-thin, fallback */
+#font-sans-serif-thin-container {
+    container-type: inline-size;
+    container-name: font-sans-serif-thin-container;
+}
+
+#font-sans-serif-thin-text {
+    font-family: sans-serif-thin, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-sans-serif-thin-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* ARNO PRO, fallback */
+#font-arno-pro-container {
+    container-type: inline-size;
+    container-name: font-arno-pro-container;
+}
+
+#font-arno-pro-text {
+    font-family: ARNO PRO, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-arno-pro-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Agency FB, fallback */
+#font-agency-fb-container {
+    container-type: inline-size;
+    container-name: font-agency-fb-container;
+}
+
+#font-agency-fb-text {
+    font-family: Agency FB, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-agency-fb-container (width > 204px) and (width < 205px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Arabic Typesetting, fallback */
+#font-arabic-typesetting-container {
+    container-type: inline-size;
+    container-name: font-arabic-typesetting-container;
+}
+
+#font-arabic-typesetting-text {
+    font-family: Arabic Typesetting, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-arabic-typesetting-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Arial Unicode MS, fallback */
+#font-arial-unicode-ms-container {
+    container-type: inline-size;
+    container-name: font-arial-unicode-ms-container;
+}
+
+#font-arial-unicode-ms-text {
+    font-family: Arial Unicode MS, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-arial-unicode-ms-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* AvantGarde Bk BT, fallback */
+#font-avantgarde-bk-bt-container {
+    container-type: inline-size;
+    container-name: font-avantgarde-bk-bt-container;
+}
+
+#font-avantgarde-bk-bt-text {
+    font-family: AvantGarde Bk BT, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-avantgarde-bk-bt-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* BankGothic Md BT, fallback */
+#font-bankgothic-md-bt-container {
+    container-type: inline-size;
+    container-name: font-bankgothic-md-bt-container;
+}
+
+#font-bankgothic-md-bt-text {
+    font-family: "BankGothic Md BT", sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-bankgothic-md-bt-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Batang, fallback */
+#font-batang-container {
+    container-type: inline-size;
+    container-name: font-batang-container;
+}
+
+#font-batang-text {
+    font-family: Batang, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-batang-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Bitstream Vera Sans Mono, fallback */
+#font-bitstream-vera-sans-mono-container {
+    container-type: inline-size;
+    container-name: font-bitstream-vera-sans-mono-container;
+}
+
+#font-bitstream-vera-sans-mono-text {
+    font-family: Bitstream Vera Sans Mono, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-bitstream-vera-sans-mono-container (width > 472px) and (width < 473px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Calibri, fallback */
+#font-calibri-container {
+    container-type: inline-size;
+    container-name: font-calibri-container;
+}
+
+#font-calibri-text {
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-calibri-container (width > 270px) and (width < 271.1px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Century, fallback */
+#font-century-container {
+    container-type: inline-size;
+    container-name: font-century-container;
+}
+
+#font-century-text {
+    font-family: Century, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-century-container (width > 338px) and (width < 339px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Century Gothic, fallback */
+#font-century-gothic-container {
+    container-type: inline-size;
+    container-name: font-century-gothic-container;
+}
+
+#font-century-gothic-text {
+    font-family: Century Gothic, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-century-gothic-container (width > 274px) and (width < 276px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Clarendon, fallback */
+#font-clarendon-container {
+    container-type: inline-size;
+    container-name: font-clarendon-container;
+}
+
+#font-clarendon-text {
+    font-family: Clarendon, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-clarendon-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* EUROSTILE, fallback */
+#font-eurostile-container {
+    container-type: inline-size;
+    container-name: font-eurostile-container;
+}
+
+#font-eurostile-text {
+    font-family: EUROSTILE, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-eurostile-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Franklin Gothic, fallback */
+#font-franklin-gothic-container {
+    container-type: inline-size;
+    container-name: font-franklin-gothic-container;
+}
+
+#font-franklin-gothic-text {
+    font-family: Franklin Gothic, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-franklin-gothic-container (width > 291px) and (width < 292px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Futura Bk BT, fallback */
+#font-futura-bk-bt-container {
+    container-type: inline-size;
+    container-name: font-futura-bk-bt-container;
+}
+
+#font-futura-bk-bt-text {
+    font-family: Futura Bk BT, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-futura-bk-bt-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Futura Md BT, fallback */
+#font-futura-md-bt-container {
+    container-type: inline-size;
+    container-name: font-futura-md-bt-container;
+}
+
+#font-futura-md-bt-text {
+    font-family: Futura Md BT, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-futura-md-bt-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* GOTHAM, fallback */
+#font-gotham-container {
+    container-type: inline-size;
+    container-name: font-gotham-container;
+}
+
+#font-gotham-text {
+    font-family: GOTHAM, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-gotham-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Gill Sans, fallback */
+#font-gill-sans-container {
+    container-type: inline-size;
+    container-name: font-gill-sans-container;
+}
+
+#font-gill-sans-text {
+    font-family: Gill Sans, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-gill-sans-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* HELV, fallback */
+#font-helv-container {
+    container-type: inline-size;
+    container-name: font-helv-container;
+}
+
+#font-helv-text {
+    font-family: HELV, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-helv-container (width > 275px) and (width < 276px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Haettenschweiler, fallback */
+#font-haettenschweiler-container {
+    container-type: inline-size;
+    container-name: font-haettenschweiler-container;
+}
+
+#font-haettenschweiler-text {
+    font-family: Haettenschweiler, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-haettenschweiler-container (width > 194px) and (width < 195px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Helvetica Neue, fallback */
+#font-helvetica-neue-container {
+    container-type: inline-size;
+    container-name: font-helvetica-neue-container;
+}
+
+#font-helvetica-neue-text {
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-helvetica-neue-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Humanst521 BT, fallback */
+#font-humanst521-bt-container {
+    container-type: inline-size;
+    container-name: font-humanst521-bt-container;
+}
+
+#font-humanst521-bt-text {
+    font-family: Humanst521 BT, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-humanst521-bt-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Leelawadee, fallback */
+#font-leelawadee-container {
+    container-type: inline-size;
+    container-name: font-leelawadee-container;
+}
+
+#font-leelawadee-text {
+    font-family: Leelawadee, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-leelawadee-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Letter Gothic, fallback */
+#font-letter-gothic-container {
+    container-type: inline-size;
+    container-name: font-letter-gothic-container;
+}
+
+#font-letter-gothic-text {
+    font-family: Letter Gothic, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-letter-gothic-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Levenim MT, fallback */
+#font-levenim-mt-container {
+    container-type: inline-size;
+    container-name: font-levenim-mt-container;
+}
+
+#font-levenim-mt-text {
+    font-family: Levenim MT, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-levenim-mt-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Lucida Bright, fallback */
+#font-lucida-bright-container {
+    container-type: inline-size;
+    container-name: font-lucida-bright-container;
+}
+
+#font-lucida-bright-text {
+    font-family: Lucida Bright, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-lucida-bright-container (width > 346px) and (width < 348px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Lucida Sans, fallback */
+#font-lucida-sans-container {
+    container-type: inline-size;
+    container-name: font-lucida-sans-container;
+}
+
+#font-lucida-sans-text {
+    font-family: Lucida Sans, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-lucida-sans-container (width > 329px) and (width < 331px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Menlo, fallback */
+#font-menlo-container {
+    container-type: inline-size;
+    container-name: font-menlo-container;
+}
+
+#font-menlo-text {
+    font-family: Menlo, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-menlo-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* MS Mincho, fallback */
+#font-ms-mincho-container {
+    container-type: inline-size;
+    container-name: font-ms-mincho-container;
+}
+
+#font-ms-mincho-text {
+    font-family: MS Mincho, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-ms-mincho-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* MS Outlook, fallback */
+#font-ms-outlook-container {
+    container-type: inline-size;
+    container-name: font-ms-outlook-container;
+}
+
+#font-ms-outlook-text {
+    font-family: MS Outlook, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-ms-outlook-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* MS Reference Specialty, fallback */
+#font-ms-reference-specialty-container {
+    container-type: inline-size;
+    container-name: font-ms-reference-specialty-container;
+}
+
+#font-ms-reference-specialty-text {
+    font-family: MS Reference Specialty, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-ms-reference-specialty-container (width > 845px) and (width < 846px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* MS UI Gothic, fallback */
+#font-ms-ui-gothic-container {
+    container-type: inline-size;
+    container-name: font-ms-ui-gothic-container;
+}
+
+#font-ms-ui-gothic-text {
+    font-family: MS UI Gothic, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-ms-ui-gothic-container (width > 236px) and (width < 238px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* MT Extra, fallback */
+#font-mt-extra-container {
+    container-type: inline-size;
+    container-name: font-mt-extra-container;
+}
+
+#font-mt-extra-text {
+    font-family: MT Extra, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-mt-extra-container (width > 358px) and (width < 359px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* MYRIAD PRO, fallback */
+#font-myriad-pro-container {
+    container-type: inline-size;
+    container-name: font-myriad-pro-container;
+}
+
+#font-myriad-pro-text {
+    font-family: MYRIAD PRO, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-myriad-pro-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Marlett, fallback */
+#font-marlett-container {
+    container-type: inline-size;
+    container-name: font-marlett-container;
+}
+
+#font-marlett-text {
+    font-family: Marlett, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-marlett-container (width > 783px) and (width < 785px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Meiryo UI, fallback */
+#font-meiryo-ui-container {
+    container-type: inline-size;
+    container-name: font-meiryo-ui-container;
+}
+
+#font-meiryo-ui-text {
+    font-family: Meiryo UI, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-meiryo-ui-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Microsoft Uighur, fallback */
+#font-microsoft-uighur-container {
+    container-type: inline-size;
+    container-name: font-microsoft-uighur-container;
+}
+
+#font-microsoft-uighur-text {
+    font-family: Microsoft Uighur, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-microsoft-uighur-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Minion Pro, fallback */
+#font-minion-pro-container {
+    container-type: inline-size;
+    container-name: font-minion-pro-container;
+}
+
+#font-minion-pro-text {
+    font-family: Minion Pro, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-minion-pro-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Monotype Corsiva, fallback */
+#font-monotype-corsiva-container {
+    container-type: inline-size;
+    container-name: font-monotype-corsiva-container;
+}
+
+#font-monotype-corsiva-text {
+    font-family: Monotype Corsiva, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-monotype-corsiva-container (width > 248px) and (width < 249px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* PMingLiU, fallback */
+#font-pmingliu-container {
+    container-type: inline-size;
+    container-name: font-pmingliu-container;
+}
+
+#font-pmingliu-text {
+    font-family: PMingLiU, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-pmingliu-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Pristina, fallback */
+#font-pristina-container {
+    container-type: inline-size;
+    container-name: font-pristina-container;
+}
+
+#font-pristina-text {
+    font-family: Pristina, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-pristina-container (width > 221px) and (width < 223px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* SCRIPTINA, fallback */
+#font-scriptina-container {
+    container-type: inline-size;
+    container-name: font-scriptina-container;
+}
+
+#font-scriptina-text {
+    font-family: SCRIPTINA, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-scriptina-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Segoe UI Light, fallback */
+#font-segoe-ui-light-container {
+    container-type: inline-size;
+    container-name: font-segoe-ui-light-container;
+}
+
+#font-segoe-ui-light-text {
+    font-family: Segoe UI Light, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-segoe-ui-light-container (width > 259px) and (width < 260px) {
+    p {
+        background-color: green !important;
+    }
+}
+
+/* Serifa, fallback */
+#font-serifa-container {
+    container-type: inline-size;
+    container-name: font-serifa-container;
+}
+
+#font-serifa-text {
+    font-family: Serifa, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-serifa-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* SimHei, fallback */
+#font-simhei-container {
+    container-type: inline-size;
+    container-name: font-simhei-container;
+}
+
+#font-simhei-text {
+    font-family: SimHei, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-simhei-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Small Fonts, fallback */
+#font-small-fonts-container {
+    container-type: inline-size;
+    container-name: font-small-fonts-container;
+}
+
+#font-small-fonts-text {
+    font-family: Small Fonts, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-small-fonts-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Staccato222 BT, fallback */
+#font-staccato222-bt-container {
+    container-type: inline-size;
+    container-name: font-staccato222-bt-container;
+}
+
+#font-staccato222-bt-text {
+    font-family: Staccato222 BT, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-staccato222-bt-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* TRAJAN PRO, fallback */
+#font-trajan-pro-container {
+    container-type: inline-size;
+    container-name: font-trajan-pro-container;
+}
+
+#font-trajan-pro-text {
+    font-family: TRAJAN PRO, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-trajan-pro-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Univers CE 55 Medium, fallback */
+#font-univers-ce-55-medium-container {
+    container-type: inline-size;
+    container-name: font-univers-ce-55-medium-container;
+}
+
+#font-univers-ce-55-medium-text {
+    font-family: "Univers CE 55 Medium", sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-univers-ce-55-medium-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* Vrinda, fallback */
+#font-vrinda-container {
+    container-type: inline-size;
+    container-name: font-vrinda-container;
+}
+
+#font-vrinda-text {
+    font-family: Vrinda, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-vrinda-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+
+/* ZWAdobeF, fallback */
+#font-zwadobef-container {
+    container-type: inline-size;
+    container-name: font-zwadobef-container;
+}
+
+#font-zwadobef-text {
+    font-family: ZWAdobeF, sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+}
+
+@container font-zwadobef-container (width > 100px) {
+    p {
+        background-color: blue;
+    }
+}
+

@@ -32,6 +32,8 @@ logger = logging.getLogger(__name__)
 @app.before_request
 def make_session_permanent():
     session.permanent = True
+    if 'session_id' not in session:
+        session['session_id'] = uuid.uuid4()
 
 def add_attribute(attribute, value):
     if not 'session_id' in session:
@@ -44,10 +46,6 @@ def add_attribute(attribute, value):
 
 @app.route('/')
 def home():
-    # generate session cookie
-    if 'session_id' not in session:
-        session['session_id'] = uuid.uuid4()
-
     # save user agent to the sqlite database
     add_attribute('User-Agent', request.headers.get('User-Agent'))
     logger.debug(f"User-Agent: {request.headers.get('User-Agent')}")
@@ -72,8 +70,8 @@ def viewport():
         logger.debug("Session cookie not set")
 
     # save info to the sqlite database
-    add_attribute("viewport_width", x)
-    add_attribute("viewport_height", y)
+    add_attribute("viewport_width_min", x)
+    add_attribute("viewport_width_max", y)
 
         
     image_path = os.path.join('images', 'white.png')
