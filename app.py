@@ -101,6 +101,16 @@ def image_set_heif():
     image_path = os.path.join('images', 'white.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)
 
+@app.route("/font-detection", methods=['GET'])
+def font_detection():
+    font = request.args.get('font', type=str)
+
+    if font is not None:
+        add_attribute('font', font)
+
+    image_path = os.path.join('images', 'white.png')
+    return send_file(image_path, mimetype='image/png', environ=request.environ)
+
 @app.route('/microsoft-office', methods=['GET'])
 def microsoft_office():
     param = request.args.get('param', type=int)

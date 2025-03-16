@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "MS Outlook";
+    src: local("MS Outlook");
+}
+
+:root {
+    --min-default-font-width: 256px;
+    --max-default-font-width: 257px;
+}
+
 #font-detection {
     font-family: Arial, sans-serif;
 }
@@ -23,9 +33,9 @@
     display: block;
 }
 
-@container font-arial-container (width > 100px) {
+@container font-arial-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -42,9 +52,10 @@
     display: block;
 }
 
-@container font-sans-serif-thin-container (width > 100px) {
+/*na podstawie mojego telefonu*/
+@container font-sans-serif-thin-container (width > 271.95px) and (width < 272.1px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -61,9 +72,9 @@
     display: block;
 }
 
-@container font-arno-pro-container (width > 100px) {
+@container font-arno-pro-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -80,7 +91,7 @@
     display: block;
 }
 
-@container font-agency-fb-container (width > 204px) and (width < 205px) {
+@container font-agency-fb-container not (256px < width < 257px) {
     p {
         background-color: green !important;
     }
@@ -99,9 +110,9 @@
     display: block;
 }
 
-@container font-arabic-typesetting-container (width > 100px) {
+@container font-arabic-typesetting-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -118,9 +129,9 @@
     display: block;
 }
 
-@container font-arial-unicode-ms-container (width > 100px) {
+@container font-arial-unicode-ms-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -137,9 +148,9 @@
     display: block;
 }
 
-@container font-avantgarde-bk-bt-container (width > 100px) {
+@container font-avantgarde-bk-bt-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -156,9 +167,9 @@
     display: block;
 }
 
-@container font-bankgothic-md-bt-container (width > 100px) {
+@container font-bankgothic-md-bt-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -175,9 +186,9 @@
     display: block;
 }
 
-@container font-batang-container (width > 100px) {
+@container font-batang-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -213,7 +224,7 @@
     display: block;
 }
 
-@container font-calibri-container (width > 270px) and (width < 271.1px) {
+@container font-calibri-container (width > 240px) and (width < 242px) {
     p {
         background-color: green !important;
     }
@@ -232,7 +243,7 @@
     display: block;
 }
 
-@container font-century-container (width > 338px) and (width < 339px) {
+@container font-century-container (width > 284px) and (width < 285px) {
     p {
         background-color: green !important;
     }
@@ -251,9 +262,9 @@
     display: block;
 }
 
-@container font-century-gothic-container (width > 274px) and (width < 276px) {
+@container font-century-gothic-container (width > 268px) and (width < 270px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -270,9 +281,9 @@
     display: block;
 }
 
-@container font-clarendon-container (width > 100px) {
+@container font-clarendon-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -289,9 +300,9 @@
     display: block;
 }
 
-@container font-eurostile-container (width > 100px) {
+@container font-eurostile-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -308,7 +319,7 @@
     display: block;
 }
 
-@container font-franklin-gothic-container (width > 291px) and (width < 292px) {
+@container font-franklin-gothic-container (width > 253px) and (width < 254px) {
     p {
         background-color: green !important;
     }
@@ -327,9 +338,9 @@
     display: block;
 }
 
-@container font-futura-bk-bt-container (width > 100px) {
+@container font-futura-bk-bt-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -346,9 +357,9 @@
     display: block;
 }
 
-@container font-futura-md-bt-container (width > 100px) {
+@container font-futura-md-bt-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -365,9 +376,9 @@
     display: block;
 }
 
-@container font-gotham-container (width > 100px) {
+@container font-gotham-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -378,15 +389,15 @@
 }
 
 #font-gill-sans-text {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans MT", sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-gill-sans-container (width > 100px) {
+@container font-gill-sans-container (width > 246px) and (width < 247px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -422,7 +433,7 @@
     display: block;
 }
 
-@container font-haettenschweiler-container (width > 194px) and (width < 195px) {
+@container font-haettenschweiler-container (width > 165px) and (width < 166px) {
     p {
         background-color: green !important;
     }
@@ -441,9 +452,9 @@
     display: block;
 }
 
-@container font-helvetica-neue-container (width > 100px) {
+@container font-helvetica-neue-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -460,9 +471,9 @@
     display: block;
 }
 
-@container font-humanst521-bt-container (width > 100px) {
+@container font-humanst521-bt-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -473,15 +484,15 @@
 }
 
 #font-leelawadee-text {
-    font-family: Leelawadee, sans-serif;
+    font-family: "Leelawadee UI", sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-leelawadee-container (width > 100px) {
+@container font-leelawadee-container (width > 260px) and (width < 261px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -498,9 +509,9 @@
     display: block;
 }
 
-@container font-letter-gothic-container (width > 100px) {
+@container font-letter-gothic-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -517,9 +528,9 @@
     display: block;
 }
 
-@container font-levenim-mt-container (width > 100px) {
+@container font-levenim-mt-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -536,7 +547,7 @@
     display: block;
 }
 
-@container font-lucida-bright-container (width > 346px) and (width < 348px) {
+@container font-lucida-bright-container (width > 277px) and (width < 278px) {
     p {
         background-color: green !important;
     }
@@ -555,7 +566,7 @@
     display: block;
 }
 
-@container font-lucida-sans-container (width > 329px) and (width < 331px) {
+@container font-lucida-sans-container (width > 271px) and (width < 272px) {
     p {
         background-color: green !important;
     }
@@ -574,9 +585,9 @@
     display: block;
 }
 
-@container font-menlo-container (width > 100px) {
+@container font-menlo-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -593,9 +604,9 @@
     display: block;
 }
 
-@container font-ms-mincho-container (width > 100px) {
+@container font-ms-mincho-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -606,15 +617,15 @@
 }
 
 #font-ms-outlook-text {
-    font-family: MS Outlook, sans-serif;
+    font-family: "MS Outlook", sans-serif !important;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-ms-outlook-container (width > 100px) {
+@container font-ms-outlook-container (width > 293px) and (width < 294px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -631,7 +642,7 @@
     display: block;
 }
 
-@container font-ms-reference-specialty-container (width > 845px) and (width < 846px) {
+@container font-ms-reference-specialty-container (width > 315px) and (width < 316px) {
     p {
         background-color: green !important;
     }
@@ -650,7 +661,7 @@
     display: block;
 }
 
-@container font-ms-ui-gothic-container (width > 236px) and (width < 238px) {
+@container font-ms-ui-gothic-container (width > 227px) and (width < 229px) {
     p {
         background-color: green !important;
     }
@@ -669,7 +680,7 @@
     display: block;
 }
 
-@container font-mt-extra-container (width > 358px) and (width < 359px) {
+@container font-mt-extra-container (width > 255px) and (width < 255.9px) {
     p {
         background-color: green !important;
     }
@@ -688,9 +699,9 @@
     display: block;
 }
 
-@container font-myriad-pro-container (width > 100px) {
+@container font-myriad-pro-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -707,7 +718,7 @@
     display: block;
 }
 
-@container font-marlett-container (width > 783px) and (width < 785px) {
+@container font-marlett-container (width > 355px) and (width < 356px) {
     p {
         background-color: green !important;
     }
@@ -726,9 +737,9 @@
     display: block;
 }
 
-@container font-meiryo-ui-container (width > 100px) {
+@container font-meiryo-ui-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -745,9 +756,9 @@
     display: block;
 }
 
-@container font-microsoft-uighur-container (width > 100px) {
+@container font-microsoft-uighur-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -764,9 +775,9 @@
     display: block;
 }
 
-@container font-minion-pro-container (width > 100px) {
+@container font-minion-pro-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -783,7 +794,7 @@
     display: block;
 }
 
-@container font-monotype-corsiva-container (width > 248px) and (width < 249px) {
+@container font-monotype-corsiva-container (width > 234px) and (width < 235px) {
     p {
         background-color: green !important;
     }
@@ -796,15 +807,15 @@
 }
 
 #font-pmingliu-text {
-    font-family: PMingLiU, sans-serif;
+    font-family: PMingLiU-ExtB, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-pmingliu-container (width > 100px) {
+@container font-pmingliu-container (width > 243px) and (width < 244px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -821,7 +832,7 @@
     display: block;
 }
 
-@container font-pristina-container (width > 221px) and (width < 223px) {
+@container font-pristina-container (width > 224px) and (width < 225px) {
     p {
         background-color: green !important;
     }
@@ -840,9 +851,9 @@
     display: block;
 }
 
-@container font-scriptina-container (width > 100px) {
+@container font-scriptina-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -859,7 +870,7 @@
     display: block;
 }
 
-@container font-segoe-ui-light-container (width > 259px) and (width < 260px) {
+@container font-segoe-ui-light-container (width > 239px) and (width < 240px) {
     p {
         background-color: green !important;
     }
@@ -878,9 +889,9 @@
     display: block;
 }
 
-@container font-serifa-container (width > 100px) {
+@container font-serifa-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -897,9 +908,9 @@
     display: block;
 }
 
-@container font-simhei-container (width > 100px) {
+@container font-simhei-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -916,9 +927,9 @@
     display: block;
 }
 
-@container font-small-fonts-container (width > 100px) {
+@container font-small-fonts-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -935,9 +946,9 @@
     display: block;
 }
 
-@container font-staccato222-bt-container (width > 100px) {
+@container font-staccato222-bt-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -954,9 +965,9 @@
     display: block;
 }
 
-@container font-trajan-pro-container (width > 100px) {
+@container font-trajan-pro-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -973,9 +984,9 @@
     display: block;
 }
 
-@container font-univers-ce-55-medium-container (width > 100px) {
+@container font-univers-ce-55-medium-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -992,9 +1003,9 @@
     display: block;
 }
 
-@container font-vrinda-container (width > 100px) {
+@container font-vrinda-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
@@ -1011,9 +1022,9 @@
     display: block;
 }
 
-@container font-zwadobef-container (width > 100px) {
+@container font-zwadobef-container not (256px < width < 257px) {
     p {
-        background-color: blue;
+        background-color: green !important;
     }
 }
 
