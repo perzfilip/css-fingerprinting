@@ -135,6 +135,17 @@ def os_identification():
     image_path = os.path.join('images', 'white.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)
 
+@app.route('/fingerprint', methods=['GET'])
+def fingerprint():
+    attr_name = request.args.get('attr_name', type=str)
+    attr_value = request.args.get('attr_value', type=str)
+
+    if attr_name is not None and attr_value is not None:
+        add_attribute(attr_name, attr_value)
+
+    image_path = os.path.join('images', 'white.png')
+    return send_file(image_path, mimetype='image/png', environ=request.environ)
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()

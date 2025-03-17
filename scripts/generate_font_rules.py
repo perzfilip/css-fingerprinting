@@ -1,3 +1,5 @@
+import os
+
 def generate_font_rules():
     fonts = [
         'sans-serif-thin',
@@ -89,5 +91,23 @@ def generate_font_rules():
     print("HTML and CSS files generated successfully!")
 
 
+def generate_css_rules_env_9(start, end, container_name="env-9-container", attr_name="env-9", output_folder="outputs",
+                       output_file="generated.css"):
+    css_rules = ""
+    for px in range(start, end + 1):
+        rule = (f"@container {container_name} (min-width: {px}px) {{\n"
+                f"    p {{\n"
+                f"        background-image: url(\"/fingerprint?attr_name={attr_name}&attr_value={px}\");\n"
+                f"    }}\n"
+                f"}}\n\n")
+        css_rules += rule
+
+    os.makedirs(output_folder, exist_ok=True)
+    with open(os.path.join(output_folder, output_file), "w") as f:
+        f.write(css_rules)
+
+
 if __name__ == '__main__':
-    generate_font_rules()
+    # generate_font_rules()
+    generate_css_rules_env_9(500, 1000)
+
