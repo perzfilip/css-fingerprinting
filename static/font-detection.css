@@ -1,12 +1,3 @@
-@font-face {
-    font-family: "MS Outlook";
-    src: local("MS Outlook");
-}
-
-:root {
-    --min-default-font-width: 256px;
-    --max-default-font-width: 257px;
-}
 
 #font-detection {
     font-family: Arial, sans-serif;
@@ -19,43 +10,22 @@
 .font-detection-wrapper {
     width: fit-content;
 }
-
-/* Arial, sans-serif */
-#font-arial-container {
-    container-type: inline-size;
-    container-name: font-arial-container;
-}
-
-#font-arial-text {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    white-space: nowrap;
-    display: block;
-}
-
-@container font-arial-container not (256px < width < 257px) {
-    p {
-        background-color: green !important;
-    }
-}
-
-/* sans-serif-thin, fallback */
+    /* sans-serif-thin, fallback */
 #font-sans-serif-thin-container {
     container-type: inline-size;
     container-name: font-sans-serif-thin-container;
 }
 
 #font-sans-serif-thin-text {
-    font-family: sans-serif-thin, sans-serif;
+    font-family: "sans-serif-thin", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-/*na podstawie mojego telefonu*/
-@container font-sans-serif-thin-container (width > 271.95px) and (width < 272.1px) {
+@container font-sans-serif-thin-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=sans-serif-thin") !important;
     }
 }
 
@@ -66,7 +36,7 @@
 }
 
 #font-arno-pro-text {
-    font-family: ARNO PRO, sans-serif;
+    font-family: "ARNO PRO", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -74,7 +44,7 @@
 
 @container font-arno-pro-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=ARNO PRO") !important;
     }
 }
 
@@ -85,7 +55,7 @@
 }
 
 #font-agency-fb-text {
-    font-family: Agency FB, sans-serif;
+    font-family: "Agency FB", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -93,7 +63,7 @@
 
 @container font-agency-fb-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Agency FB") !important;
     }
 }
 
@@ -104,7 +74,7 @@
 }
 
 #font-arabic-typesetting-text {
-    font-family: Arabic Typesetting, sans-serif;
+    font-family: "Arabic Typesetting", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -112,7 +82,7 @@
 
 @container font-arabic-typesetting-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Arabic Typesetting") !important;
     }
 }
 
@@ -123,7 +93,7 @@
 }
 
 #font-arial-unicode-ms-text {
-    font-family: Arial Unicode MS, sans-serif;
+    font-family: "Arial Unicode MS", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -131,7 +101,7 @@
 
 @container font-arial-unicode-ms-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Arial Unicode MS") !important;
     }
 }
 
@@ -142,7 +112,7 @@
 }
 
 #font-avantgarde-bk-bt-text {
-    font-family: AvantGarde Bk BT, sans-serif;
+    font-family: "AvantGarde Bk BT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -150,7 +120,7 @@
 
 @container font-avantgarde-bk-bt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=AvantGarde Bk BT") !important;
     }
 }
 
@@ -161,7 +131,7 @@
 }
 
 #font-bankgothic-md-bt-text {
-    font-family: "BankGothic Md BT", sans-serif;
+    font-family: "BankGothic Md BT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -169,7 +139,7 @@
 
 @container font-bankgothic-md-bt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=BankGothic Md BT") !important;
     }
 }
 
@@ -180,7 +150,7 @@
 }
 
 #font-batang-text {
-    font-family: Batang, sans-serif;
+    font-family: "Batang", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -188,7 +158,7 @@
 
 @container font-batang-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Batang") !important;
     }
 }
 
@@ -199,15 +169,15 @@
 }
 
 #font-bitstream-vera-sans-mono-text {
-    font-family: Bitstream Vera Sans Mono, sans-serif;
+    font-family: "Bitstream Vera Sans Mono", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-bitstream-vera-sans-mono-container (width > 472px) and (width < 473px) {
+@container font-bitstream-vera-sans-mono-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Bitstream Vera Sans Mono") !important;
     }
 }
 
@@ -218,15 +188,15 @@
 }
 
 #font-calibri-text {
-    font-family: Calibri, sans-serif;
+    font-family: "Calibri", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-calibri-container (width > 240px) and (width < 242px) {
+@container font-calibri-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Calibri") !important;
     }
 }
 
@@ -237,15 +207,15 @@
 }
 
 #font-century-text {
-    font-family: Century, sans-serif;
+    font-family: "Century", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-century-container (width > 284px) and (width < 285px) {
+@container font-century-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Century") !important;
     }
 }
 
@@ -256,15 +226,15 @@
 }
 
 #font-century-gothic-text {
-    font-family: Century Gothic, sans-serif;
+    font-family: "Century Gothic", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-century-gothic-container (width > 268px) and (width < 270px) {
+@container font-century-gothic-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Century Gothic") !important;
     }
 }
 
@@ -275,7 +245,7 @@
 }
 
 #font-clarendon-text {
-    font-family: Clarendon, sans-serif;
+    font-family: "Clarendon", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -283,7 +253,7 @@
 
 @container font-clarendon-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Clarendon") !important;
     }
 }
 
@@ -294,7 +264,7 @@
 }
 
 #font-eurostile-text {
-    font-family: EUROSTILE, sans-serif;
+    font-family: "EUROSTILE", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -302,7 +272,7 @@
 
 @container font-eurostile-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=EUROSTILE") !important;
     }
 }
 
@@ -313,15 +283,15 @@
 }
 
 #font-franklin-gothic-text {
-    font-family: Franklin Gothic, sans-serif;
+    font-family: "Franklin Gothic", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-franklin-gothic-container (width > 253px) and (width < 254px) {
+@container font-franklin-gothic-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Franklin Gothic") !important;
     }
 }
 
@@ -332,7 +302,7 @@
 }
 
 #font-futura-bk-bt-text {
-    font-family: Futura Bk BT, sans-serif;
+    font-family: "Futura Bk BT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -340,7 +310,7 @@
 
 @container font-futura-bk-bt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Futura Bk BT") !important;
     }
 }
 
@@ -351,7 +321,7 @@
 }
 
 #font-futura-md-bt-text {
-    font-family: Futura Md BT, sans-serif;
+    font-family: "Futura Md BT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -359,7 +329,7 @@
 
 @container font-futura-md-bt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Futura Md BT") !important;
     }
 }
 
@@ -370,7 +340,7 @@
 }
 
 #font-gotham-text {
-    font-family: GOTHAM, sans-serif;
+    font-family: "GOTHAM", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -378,26 +348,26 @@
 
 @container font-gotham-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=GOTHAM") !important;
     }
 }
 
-/* Gill Sans, fallback */
-#font-gill-sans-container {
+/* Gill Sans MT, fallback */
+#font-gill-sans-mt-container {
     container-type: inline-size;
-    container-name: font-gill-sans-container;
+    container-name: font-gill-sans-mt-container;
 }
 
-#font-gill-sans-text {
-    font-family: "Gill Sans MT", sans-serif;
+#font-gill-sans-mt-text {
+    font-family: "Gill Sans MT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-gill-sans-container (width > 246px) and (width < 247px) {
+@container font-gill-sans-mt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Gill Sans MT") !important;
     }
 }
 
@@ -408,15 +378,15 @@
 }
 
 #font-helv-text {
-    font-family: HELV, sans-serif;
+    font-family: "HELV", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-helv-container (width > 275px) and (width < 276px) {
+@container font-helv-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=HELV") !important;
     }
 }
 
@@ -427,15 +397,15 @@
 }
 
 #font-haettenschweiler-text {
-    font-family: Haettenschweiler, sans-serif;
+    font-family: "Haettenschweiler", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-haettenschweiler-container (width > 165px) and (width < 166px) {
+@container font-haettenschweiler-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Haettenschweiler") !important;
     }
 }
 
@@ -446,7 +416,7 @@
 }
 
 #font-helvetica-neue-text {
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -454,7 +424,7 @@
 
 @container font-helvetica-neue-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Helvetica Neue") !important;
     }
 }
 
@@ -465,7 +435,7 @@
 }
 
 #font-humanst521-bt-text {
-    font-family: Humanst521 BT, sans-serif;
+    font-family: "Humanst521 BT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -473,26 +443,26 @@
 
 @container font-humanst521-bt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Humanst521 BT") !important;
     }
 }
 
-/* Leelawadee, fallback */
-#font-leelawadee-container {
+/* Leelawadee UI, fallback */
+#font-leelawadee-ui-container {
     container-type: inline-size;
-    container-name: font-leelawadee-container;
+    container-name: font-leelawadee-ui-container;
 }
 
-#font-leelawadee-text {
-    font-family: "Leelawadee UI", sans-serif;
+#font-leelawadee-ui-text {
+    font-family: "Leelawadee UI", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-leelawadee-container (width > 260px) and (width < 261px) {
+@container font-leelawadee-ui-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Leelawadee UI") !important;
     }
 }
 
@@ -503,7 +473,7 @@
 }
 
 #font-letter-gothic-text {
-    font-family: Letter Gothic, sans-serif;
+    font-family: "Letter Gothic", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -511,7 +481,7 @@
 
 @container font-letter-gothic-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Letter Gothic") !important;
     }
 }
 
@@ -522,7 +492,7 @@
 }
 
 #font-levenim-mt-text {
-    font-family: Levenim MT, sans-serif;
+    font-family: "Levenim MT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -530,7 +500,7 @@
 
 @container font-levenim-mt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Levenim MT") !important;
     }
 }
 
@@ -541,15 +511,15 @@
 }
 
 #font-lucida-bright-text {
-    font-family: Lucida Bright, sans-serif;
+    font-family: "Lucida Bright", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-lucida-bright-container (width > 277px) and (width < 278px) {
+@container font-lucida-bright-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Lucida Bright") !important;
     }
 }
 
@@ -560,15 +530,15 @@
 }
 
 #font-lucida-sans-text {
-    font-family: Lucida Sans, sans-serif;
+    font-family: "Lucida Sans", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-lucida-sans-container (width > 271px) and (width < 272px) {
+@container font-lucida-sans-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Lucida Sans") !important;
     }
 }
 
@@ -579,7 +549,7 @@
 }
 
 #font-menlo-text {
-    font-family: Menlo, sans-serif;
+    font-family: "Menlo", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -587,7 +557,7 @@
 
 @container font-menlo-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Menlo") !important;
     }
 }
 
@@ -598,7 +568,7 @@
 }
 
 #font-ms-mincho-text {
-    font-family: MS Mincho, sans-serif;
+    font-family: "MS Mincho", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -606,7 +576,7 @@
 
 @container font-ms-mincho-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=MS Mincho") !important;
     }
 }
 
@@ -617,15 +587,15 @@
 }
 
 #font-ms-outlook-text {
-    font-family: "MS Outlook", sans-serif !important;
+    font-family: "MS Outlook", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-ms-outlook-container (width > 293px) and (width < 294px) {
+@container font-ms-outlook-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=MS Outlook") !important;
     }
 }
 
@@ -636,15 +606,15 @@
 }
 
 #font-ms-reference-specialty-text {
-    font-family: MS Reference Specialty, sans-serif;
+    font-family: "MS Reference Specialty", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-ms-reference-specialty-container (width > 315px) and (width < 316px) {
+@container font-ms-reference-specialty-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=MS Reference Specialty") !important;
     }
 }
 
@@ -655,15 +625,15 @@
 }
 
 #font-ms-ui-gothic-text {
-    font-family: MS UI Gothic, sans-serif;
+    font-family: "MS UI Gothic", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-ms-ui-gothic-container (width > 227px) and (width < 229px) {
+@container font-ms-ui-gothic-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=MS UI Gothic") !important;
     }
 }
 
@@ -674,15 +644,15 @@
 }
 
 #font-mt-extra-text {
-    font-family: MT Extra, sans-serif;
+    font-family: "MT Extra", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-mt-extra-container (width > 255px) and (width < 255.9px) {
+@container font-mt-extra-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=MT Extra") !important;
     }
 }
 
@@ -693,7 +663,7 @@
 }
 
 #font-myriad-pro-text {
-    font-family: MYRIAD PRO, sans-serif;
+    font-family: "MYRIAD PRO", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -701,7 +671,7 @@
 
 @container font-myriad-pro-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=MYRIAD PRO") !important;
     }
 }
 
@@ -712,15 +682,15 @@
 }
 
 #font-marlett-text {
-    font-family: Marlett, sans-serif;
+    font-family: "Marlett", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-marlett-container (width > 355px) and (width < 356px) {
+@container font-marlett-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Marlett") !important;
     }
 }
 
@@ -731,7 +701,7 @@
 }
 
 #font-meiryo-ui-text {
-    font-family: Meiryo UI, sans-serif;
+    font-family: "Meiryo UI", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -739,7 +709,7 @@
 
 @container font-meiryo-ui-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Meiryo UI") !important;
     }
 }
 
@@ -750,7 +720,7 @@
 }
 
 #font-microsoft-uighur-text {
-    font-family: Microsoft Uighur, sans-serif;
+    font-family: "Microsoft Uighur", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -758,7 +728,7 @@
 
 @container font-microsoft-uighur-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Microsoft Uighur") !important;
     }
 }
 
@@ -769,7 +739,7 @@
 }
 
 #font-minion-pro-text {
-    font-family: Minion Pro, sans-serif;
+    font-family: "Minion Pro", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -777,7 +747,7 @@
 
 @container font-minion-pro-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Minion Pro") !important;
     }
 }
 
@@ -788,34 +758,34 @@
 }
 
 #font-monotype-corsiva-text {
-    font-family: Monotype Corsiva, sans-serif;
+    font-family: "Monotype Corsiva", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-monotype-corsiva-container (width > 234px) and (width < 235px) {
+@container font-monotype-corsiva-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Monotype Corsiva") !important;
     }
 }
 
-/* PMingLiU, fallback */
-#font-pmingliu-container {
+/* PMingLiU-ExtB, fallback */
+#font-pmingliu-extb-container {
     container-type: inline-size;
-    container-name: font-pmingliu-container;
+    container-name: font-pmingliu-extb-container;
 }
 
-#font-pmingliu-text {
-    font-family: PMingLiU-ExtB, sans-serif;
+#font-pmingliu-extb-text {
+    font-family: "PMingLiU-ExtB", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-pmingliu-container (width > 243px) and (width < 244px) {
+@container font-pmingliu-extb-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=PMingLiU-ExtB") !important;
     }
 }
 
@@ -826,15 +796,15 @@
 }
 
 #font-pristina-text {
-    font-family: Pristina, sans-serif;
+    font-family: "Pristina", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-pristina-container (width > 224px) and (width < 225px) {
+@container font-pristina-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Pristina") !important;
     }
 }
 
@@ -845,7 +815,7 @@
 }
 
 #font-scriptina-text {
-    font-family: SCRIPTINA, sans-serif;
+    font-family: "SCRIPTINA", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -853,7 +823,7 @@
 
 @container font-scriptina-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=SCRIPTINA") !important;
     }
 }
 
@@ -864,15 +834,15 @@
 }
 
 #font-segoe-ui-light-text {
-    font-family: Segoe UI Light, sans-serif;
+    font-family: "Segoe UI Light", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
 }
 
-@container font-segoe-ui-light-container (width > 239px) and (width < 240px) {
+@container font-segoe-ui-light-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Segoe UI Light") !important;
     }
 }
 
@@ -883,7 +853,7 @@
 }
 
 #font-serifa-text {
-    font-family: Serifa, sans-serif;
+    font-family: "Serifa", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -891,7 +861,7 @@
 
 @container font-serifa-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Serifa") !important;
     }
 }
 
@@ -902,7 +872,7 @@
 }
 
 #font-simhei-text {
-    font-family: SimHei, sans-serif;
+    font-family: "SimHei", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -910,7 +880,7 @@
 
 @container font-simhei-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=SimHei") !important;
     }
 }
 
@@ -921,7 +891,7 @@
 }
 
 #font-small-fonts-text {
-    font-family: Small Fonts, sans-serif;
+    font-family: "Small Fonts", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -929,7 +899,7 @@
 
 @container font-small-fonts-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Small Fonts") !important;
     }
 }
 
@@ -940,7 +910,7 @@
 }
 
 #font-staccato222-bt-text {
-    font-family: Staccato222 BT, sans-serif;
+    font-family: "Staccato222 BT", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -948,7 +918,7 @@
 
 @container font-staccato222-bt-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Staccato222 BT") !important;
     }
 }
 
@@ -959,7 +929,7 @@
 }
 
 #font-trajan-pro-text {
-    font-family: TRAJAN PRO, sans-serif;
+    font-family: "TRAJAN PRO", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -967,7 +937,7 @@
 
 @container font-trajan-pro-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=TRAJAN PRO") !important;
     }
 }
 
@@ -978,7 +948,7 @@
 }
 
 #font-univers-ce-55-medium-text {
-    font-family: "Univers CE 55 Medium", sans-serif;
+    font-family: "Univers CE 55 Medium", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -986,7 +956,7 @@
 
 @container font-univers-ce-55-medium-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Univers CE 55 Medium") !important;
     }
 }
 
@@ -997,7 +967,7 @@
 }
 
 #font-vrinda-text {
-    font-family: Vrinda, sans-serif;
+    font-family: "Vrinda", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -1005,7 +975,7 @@
 
 @container font-vrinda-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=Vrinda") !important;
     }
 }
 
@@ -1016,7 +986,7 @@
 }
 
 #font-zwadobef-text {
-    font-family: ZWAdobeF, sans-serif;
+    font-family: "ZWAdobeF", Arial, sans-serif;
     font-size: 16px;
     white-space: nowrap;
     display: block;
@@ -1024,7 +994,7 @@
 
 @container font-zwadobef-container not (256px < width < 257px) {
     p {
-        background-color: green !important;
+        background-image: url("/font-detection?font=ZWAdobeF") !important;
     }
 }
 

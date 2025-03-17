@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='os-identification.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='button-width.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='font-detection.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-1.css') }}">
     <title>Main Page</title>
     <style>
-
-
+        body {
+            font-family: Arial;
+        }
     </style>
 </head>
 <body>
@@ -43,6 +45,17 @@
         <p>Lorem!</p>
     </div>
     <button>dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</button>
+</div>
+<!-- ENV-9 detection group -->
+<div id="env-9">
+    <div id="env-9-container">
+        <div id="env-9-items">
+            <input type="date" name="date" id="input-date">
+            <input type="file" name="file" id="input-file">
+            <input type="month" name="month" id="input-month">
+            <input type="week" name="week" id="input-week">
+        </div>
+    </div>
 </div>
 
 <!-- font detection -->

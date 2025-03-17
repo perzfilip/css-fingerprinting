@@ -18,12 +18,12 @@ def generate_font_rules():
         'Futura Bk BT',
         'Futura Md BT',
         'GOTHAM',
-        'Gill Sans',
+        'Gill Sans MT',
         'HELV',
         'Haettenschweiler',
         'Helvetica Neue',
         'Humanst521 BT',
-        'Leelawadee',
+        'Leelawadee UI',
         'Letter Gothic',
         'Levenim MT',
         'Lucida Bright',
@@ -40,7 +40,7 @@ def generate_font_rules():
         'Microsoft Uighur',
         'Minion Pro',
         'Monotype Corsiva',
-        'PMingLiU',
+        'PMingLiU-ExtB',
         'Pristina',
         'SCRIPTINA',
         'Segoe UI Light',
@@ -54,12 +54,24 @@ def generate_font_rules():
         'ZWAdobeF'
     ]
 
-    html_template = """<div class=\"font-detection-wrapper\">\n    <div id=\"font-{id}-container\">\n        <p>{name}</p>\n    </div>\n    <p id=\"font-{id}-text\">mmmmmmmmmmlllllllllllllllllllllllllllllllllllllll</p>\n</div>\n"""
+    html_template = """<div class=\"font-detection-wrapper\">\n    <div id=\"font-{id}-container\">\n        <p>{name}</p>\n    </div>\n    <p id=\"font-{id}-text\">mmMwWLliI0O&1mmMwWLliI0O&1</p>\n</div>\n"""
 
-    css_template = """/* {name}, fallback */\n#font-{id}-container {{\n    container-type: inline-size;\n    container-name: font-{id}-container;\n}}\n\n#font-{id}-text {{\n    font-family: {name}, sans-serif;\n    font-size: 16px;\n    white-space: nowrap;\n    display: block;\n}}\n\n@container font-{id}-container (width > 100px) {{\n    p {{\n        background-color: blue;\n    }}\n}}\n\n"""
+    css_template = """/* {name}, fallback */\n#font-{id}-container {{\n    container-type: inline-size;\n    container-name: font-{id}-container;\n}}\n\n#font-{id}-text {{\n    font-family: \"{name}\", Arial, sans-serif;\n    font-size: 16px;\n    white-space: nowrap;\n    display: block;\n}}\n\n@container font-{id}-container not (256px < width < 257px) {{\n    p {{\n        background-image: url(\"/font-detection?font={name}\") !important;\n    }}\n}}\n\n"""
 
     html_content = "<html>\n<head>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"fonts.css\">\n</head>\n<body>\n"
-    css_content = ""
+    css_content = """
+#font-detection {
+    font-family: Arial, sans-serif;
+}
+
+.tested-font {
+    background-color: blue;
+}
+
+.font-detection-wrapper {
+    width: fit-content;
+}
+    """
 
     for font in fonts:
         font_id = font.lower().replace(" ", "-")
