@@ -1,4 +1,4 @@
-.wrapper {
+#calc-wrapper {
     width: fit-content;
 }
 
@@ -15,7 +15,7 @@
 @container calccontainer (width: 0px) {
     #calcUbuntu {
         color: orangered;
-        background-image: url("/os-identification?system=linux&browser=chrome");
+        background-image: url("/fingerprint?system=linux&browser=chrome");
     }
 
     #calcWindows {
@@ -27,7 +27,7 @@
 @container calccontainer (width: 5.766666666px) {
         #calcUbuntu {
         color: orangered;
-        background-image: url("/os-identification?system=linux&browser=firefox");
+        background-image: url("/fingerprint?system=linux&browser=firefox");
     }
 
     #calcWindows {
@@ -42,7 +42,7 @@
 
     #calcWindows {
         color: blue;
-        background-image: url("/os-identification?system=windows&browser=chrome");
+        background-image: url("/fingerprint?system=windows&browser=chrome");
     }
 }
 

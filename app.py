@@ -13,6 +13,7 @@ app.config.from_pyfile('config.py')
 # SQLite setup
 db = SQLAlchemy(app)
 
+
 class CSSAttribute(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     session_id = db.Column(db.String(100), nullable=False)
@@ -22,9 +23,11 @@ class CSSAttribute(db.Model):
     def __repr__(self):
         return f"CSSAttribute({self.session_id}, {self.attribute}, {self.value})"
 
+
 # Logging setup
 logging.basicConfig(level=app.config['LOGGING_LEVEL'])
 logger = logging.getLogger(__name__)
+
 
 # todo implementacja wszystkich funkcji https://browserstrangeness.bitbucket.io/css_hacks.html
 # zrobie tak że wszystkie te funkcje zaimplementuje i przetestuje wszystkie obecne buildy przegladarek pod to
@@ -35,6 +38,7 @@ def make_session_permanent():
     if 'session_id' not in session:
         session['session_id'] = uuid.uuid4()
 
+
 def add_attribute(attribute, value):
     if not 'session_id' in session:
         logger.error(f"Could not save attribute {attribute} in database, because there is no session id")
@@ -43,6 +47,7 @@ def add_attribute(attribute, value):
     attribute = CSSAttribute(session_id=str(session['session_id']), attribute=attribute, value=value)
     db.session.add(attribute)
     db.session.commit()
+
 
 @app.route('/')
 def home():
@@ -53,100 +58,18 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/viewport', methods=['GET'])
-def viewport():
-    param = request.args.get('param', type=str)
-
-    # validation
-    if len(param) != 4 or not param.isdigit():
-        return 'Invalid parameter', 400
-
-    x = int(param[:2]) * 100
-    y = int(param[2:]) * 100
-
-    if 'session_id' in session:
-        logger.debug(f"Viewport width: {x}-{y}px, Session cookie: {session['session_id']}")
-    else:
-        logger.debug("Session cookie not set")
-
-    # save info to the sqlite database
-    add_attribute("viewport_width_min", x)
-    add_attribute("viewport_width_max", y)
-
-        
-    image_path = os.path.join('images', 'white.png')
-    return send_file(image_path, mimetype='image/png', environ=request.environ)
-
-@app.route('/image-set-px', methods=['GET'])
-def image_set_px():
-    px_per_px = request.args.get('px_per_px', type=int)
-
-    if px_per_px is None:
-        return 'Invalid parameter', 400
-
-    add_attribute('px_per_px', px_per_px)
-
-    image_path = os.path.join('images', 'white.png')
-    return send_file(image_path, mimetype='image/png', environ=request.environ)
-
-@app.route("/image-set-heif",methods=['GET'])
-def image_set_heif():
-    heif = request.args.get('heif', type=int)
-
-    if heif is None:
-        return 'Invalid parameter', 400
-
-    add_attribute('heif', heif)
-
-    image_path = os.path.join('images', 'white.png')
-    return send_file(image_path, mimetype='image/png', environ=request.environ)
-
-@app.route("/font-detection", methods=['GET'])
-def font_detection():
-    font = request.args.get('font', type=str)
-
-    if font is not None:
-        add_attribute('font', font)
-
-    image_path = os.path.join('images', 'white.png')
-    return send_file(image_path, mimetype='image/png', environ=request.environ)
-
-@app.route('/microsoft-office', methods=['GET'])
-def microsoft_office():
-    param = request.args.get('param', type=int)
-
-    if param is not None:
-        if param:
-            print("Microsoft Office is installed")
-        else:
-            print("Microsoft Office is not installed")
-
-    image_path = os.path.join('images', 'white.png')
-    return send_file(image_path, mimetype='image/png', environ=request.environ)
-
-@app.route('/os-identification', methods=['GET'])
-def os_identification():
-    system = request.args.get('system', type=str)
-    browser = request.args.get('browser', type=str)
-
-    add_attribute('system', system)
-    add_attribute('browser', browser)
-
-    image_path = os.path.join('images', 'white.png')
-    return send_file(image_path, mimetype='image/png', environ=request.environ)
-
 @app.route('/fingerprint', methods=['GET'])
 def fingerprint():
-    attr_name = request.args.get('attr_name', type=str)
-    attr_value = request.args.get('attr_value', type=str)
+    attributes = {key: value for key, value in request.args.items()}
 
-    if attr_name is not None and attr_value is not None:
+    for attr_name, attr_value in attributes.items():
         add_attribute(attr_name, attr_value)
 
     image_path = os.path.join('images', 'white.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)
 
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(host="0.0.0.0",debug=True)
+    app.run(host="0.0.0.0", debug=True)

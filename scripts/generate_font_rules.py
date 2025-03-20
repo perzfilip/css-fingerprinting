@@ -91,13 +91,21 @@ def generate_font_rules():
     print("HTML and CSS files generated successfully!")
 
 
-def generate_css_rules_env_9(start, end, container_name="env-9-container", attr_name="env-9", output_folder="outputs",
-                       output_file="generated.css"):
+def generate_css_rules_env_9(width_start, width_end, height_start, height_end, container_name="env-9-container", attr_name="env-9", output_folder="outputs", output_file="generated.css"):
     css_rules = ""
-    for px in range(start, end + 1):
+
+    for px in range(width_start, width_end + 1):
         rule = (f"@container {container_name} (min-width: {px}px) {{\n"
-                f"    p {{\n"
-                f"        background-image: url(\"/fingerprint?attr_name={attr_name}&attr_value={px}\");\n"
+                f"    p#env-9-width {{\n"
+                f"        background-image: url(\"/fingerprint?env-9-width={px}\");\n"
+                f"    }}\n"
+                f"}}\n\n")
+        css_rules += rule
+
+    for px in range(height_start, height_end + 1):
+        rule = (f"@container {container_name} (min-height: {px}px) {{\n"
+                f"    p#env-9-height {{\n"
+                f"        background-image: url(\"/fingerprint?env-9-height={px}\");\n"
                 f"    }}\n"
                 f"}}\n\n")
         css_rules += rule
@@ -107,7 +115,32 @@ def generate_css_rules_env_9(start, end, container_name="env-9-container", attr_
         f.write(css_rules)
 
 
+def generate_css_viewport(width_start, width_end, height_start, height_end, container_name="viewport", output_folder="outputs", output_file="viewport.css"):
+    css_rules = ""
+
+    for px in range(width_start, width_end + 1):
+        rule = (f"@container {container_name} (min-width: {px}px) {{\n"
+                f"    p#viewport-width {{\n"
+                f"        display: block;\n"
+                f"        background-image: url(\"/fingerprint?viewport_width={px}\");\n"
+                f"    }}\n"
+                f"}}\n\n")
+        css_rules += rule
+
+    for px in range(height_start, height_end + 1):
+        rule = (f"@container {container_name} (min-height: {px}px) {{\n"
+                f"    p#viewport-height {{\n"
+                f"        display: block;\n"
+                f"        background-image: url(\"/fingerprint?viewport_height={px}\");\n"
+                f"    }}\n"
+                f"}}\n\n")
+        css_rules += rule
+
+    os.makedirs(output_folder, exist_ok=True)
+    with open(os.path.join(output_folder, output_file), "w") as f:
+        f.write(css_rules)
+
 if __name__ == '__main__':
     # generate_font_rules()
-    generate_css_rules_env_9(500, 1000)
-
+    # generate_css_rules_env_9(500, 700, 50, 150)
+    generate_css_viewport(1, 100, 1, 100)

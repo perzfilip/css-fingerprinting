@@ -6,7 +6,6 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='viewport-width.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='image-set.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='microsoft-office.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='os-identification.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='button-width.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='font-detection.css') }}">
@@ -21,41 +20,50 @@
 <body>
 <h1>Hello, Fingerprinting!</h1>
 
-<!-- viewport width leak -->
-<div id="container-viewport">
-    <p id="pviewport">Viewport leak</p>
+<!-- viewport dimension leak -->
+
+<div id="viewport-wrapper">
+    <div id="container-viewport">
+        <p id="viewport-height">Viewport  height leak</p>
+        <p id="viewport-width">Viewport  width leak</p>
+    </div>
 </div>
 
+
+<br><br>
 <!-- image-set leak -->
 <div id="container-image-set1">
     <p id="pimage-set">Image set leak</p>
 </div>
 <div id="container-image-set2">
-    <p id="pimage-set">Image set leak</p>
+    <p id="pimage-set2">Image set leak</p>
 </div>
-<div id="container-microsoft-office">
-    <p id="pmicrosoft-office">Microsoft Office font leak</p>
-</div>
-<div class="wrapper">
+
+<!-- OS identification -->
+<div id="calc-wrapper">
     <div id="targetCalc"></div>
     <div id="containerCalc"><span id="calcWindows">Windows 11</span><span id="calcUbuntu">Linux</span></div>
 </div>
+
+<!-- button width detection -->
 <div id="button-wrapper">
     <div id="button-container">
         <p>Lorem!</p>
     </div>
     <button>dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</button>
 </div>
+
 <!-- ENV-9 detection group -->
 <div id="env-9">
-    <div id="env-9-container">
-        <p>Env 9 input measure</p>
-    </div>
     <div id="env-9-items">
         <input type="date" name="date" id="input-date">
         <input type="file" name="file" id="input-file">
         <input type="month" name="month" id="input-month">
         <input type="week" name="week" id="input-week">
+    </div>
+    <div id="env-9-container">
+        <p id="env-9-width">Env 9 input measure width</p>
+        <p id="env-9-height">Env 9 input measure height</p>
     </div>
 </div>
 

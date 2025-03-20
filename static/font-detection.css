@@ -26,7 +26,7 @@
 
 @container font-sans-serif-thin-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=sans-serif-thin") !important;
+        background-image: url("/fingerprint?font=sans-serif-thin") !important;
     }
 }
 
@@ -45,7 +45,7 @@
 
 @container font-arno-pro-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=ARNO PRO") !important;
+        background-image: url("/fingerprint?font=ARNO PRO") !important;
     }
 }
 
@@ -64,7 +64,7 @@
 
 @container font-agency-fb-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Agency FB") !important;
+        background-image: url("/fingerprint?font=Agency FB") !important;
     }
 }
 
@@ -83,7 +83,7 @@
 
 @container font-arabic-typesetting-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Arabic Typesetting") !important;
+        background-image: url("/fingerprint?font=Arabic Typesetting") !important;
     }
 }
 
@@ -102,7 +102,7 @@
 
 @container font-arial-unicode-ms-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Arial Unicode MS") !important;
+        background-image: url("/fingerprint?font=Arial Unicode MS") !important;
     }
 }
 
@@ -121,7 +121,7 @@
 
 @container font-avantgarde-bk-bt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=AvantGarde Bk BT") !important;
+        background-image: url("/fingerprint?font=AvantGarde Bk BT") !important;
     }
 }
 
@@ -140,7 +140,7 @@
 
 @container font-bankgothic-md-bt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=BankGothic Md BT") !important;
+        background-image: url("/fingerprint?font=BankGothic Md BT") !important;
     }
 }
 
@@ -159,7 +159,7 @@
 
 @container font-batang-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Batang") !important;
+        background-image: url("/fingerprint?font=Batang") !important;
     }
 }
 
@@ -178,7 +178,7 @@
 
 @container font-bitstream-vera-sans-mono-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Bitstream Vera Sans Mono") !important;
+        background-image: url("/fingerprint?font=Bitstream Vera Sans Mono") !important;
     }
 }
 
@@ -197,7 +197,7 @@
 
 @container font-calibri-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Calibri") !important;
+        background-image: url("/fingerprint?font=Calibri") !important;
     }
 }
 
@@ -216,7 +216,7 @@
 
 @container font-century-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Century") !important;
+        background-image: url("/fingerprint?font=Century") !important;
     }
 }
 
@@ -235,7 +235,7 @@
 
 @container font-century-gothic-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Century Gothic") !important;
+        background-image: url("/fingerprint?font=Century Gothic") !important;
     }
 }
 
@@ -254,7 +254,7 @@
 
 @container font-clarendon-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Clarendon") !important;
+        background-image: url("/fingerprint?font=Clarendon") !important;
     }
 }
 
@@ -273,7 +273,7 @@
 
 @container font-eurostile-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=EUROSTILE") !important;
+        background-image: url("/fingerprint?font=EUROSTILE") !important;
     }
 }
 
@@ -292,7 +292,7 @@
 
 @container font-franklin-gothic-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Franklin Gothic") !important;
+        background-image: url("/fingerprint?font=Franklin Gothic") !important;
     }
 }
 
@@ -311,7 +311,7 @@
 
 @container font-futura-bk-bt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Futura Bk BT") !important;
+        background-image: url("/fingerprint?font=Futura Bk BT") !important;
     }
 }
 
@@ -330,7 +330,7 @@
 
 @container font-futura-md-bt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Futura Md BT") !important;
+        background-image: url("/fingerprint?font=Futura Md BT") !important;
     }
 }
 
@@ -349,7 +349,7 @@
 
 @container font-gotham-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=GOTHAM") !important;
+        background-image: url("/fingerprint?font=GOTHAM") !important;
     }
 }
 
@@ -368,7 +368,7 @@
 
 @container font-gill-sans-mt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Gill Sans MT") !important;
+        background-image: url("/fingerprint?font=Gill Sans MT") !important;
     }
 }
 
@@ -387,7 +387,7 @@
 
 @container font-helv-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=HELV") !important;
+        background-image: url("/fingerprint?font=HELV") !important;
     }
 }
 
@@ -406,7 +406,7 @@
 
 @container font-haettenschweiler-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Haettenschweiler") !important;
+        background-image: url("/fingerprint?font=Haettenschweiler") !important;
     }
 }
 
@@ -425,7 +425,7 @@
 
 @container font-helvetica-neue-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Helvetica Neue") !important;
+        background-image: url("/fingerprint?font=Helvetica Neue") !important;
     }
 }
 
@@ -444,7 +444,7 @@
 
 @container font-humanst521-bt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Humanst521 BT") !important;
+        background-image: url("/fingerprint?font=Humanst521 BT") !important;
     }
 }
 
@@ -463,7 +463,7 @@
 
 @container font-leelawadee-ui-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Leelawadee UI") !important;
+        background-image: url("/fingerprint?font=Leelawadee UI") !important;
     }
 }
 
@@ -482,7 +482,7 @@
 
 @container font-letter-gothic-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Letter Gothic") !important;
+        background-image: url("/fingerprint?font=Letter Gothic") !important;
     }
 }
 
@@ -501,7 +501,7 @@
 
 @container font-levenim-mt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Levenim MT") !important;
+        background-image: url("/fingerprint?font=Levenim MT") !important;
     }
 }
 
@@ -520,7 +520,7 @@
 
 @container font-lucida-bright-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Lucida Bright") !important;
+        background-image: url("/fingerprint?font=Lucida Bright") !important;
     }
 }
 
@@ -539,7 +539,7 @@
 
 @container font-lucida-sans-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Lucida Sans") !important;
+        background-image: url("/fingerprint?font=Lucida Sans") !important;
     }
 }
 
@@ -558,7 +558,7 @@
 
 @container font-menlo-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Menlo") !important;
+        background-image: url("/fingerprint?font=Menlo") !important;
     }
 }
 
@@ -577,7 +577,7 @@
 
 @container font-ms-mincho-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=MS Mincho") !important;
+        background-image: url("/fingerprint?font=MS Mincho") !important;
     }
 }
 
@@ -596,7 +596,7 @@
 
 @container font-ms-outlook-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=MS Outlook") !important;
+        background-image: url("/fingerprint?font=MS Outlook") !important;
     }
 }
 
@@ -615,7 +615,7 @@
 
 @container font-ms-reference-specialty-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=MS Reference Specialty") !important;
+        background-image: url("/fingerprint?font=MS Reference Specialty") !important;
     }
 }
 
@@ -634,7 +634,7 @@
 
 @container font-ms-ui-gothic-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=MS UI Gothic") !important;
+        background-image: url("/fingerprint?font=MS UI Gothic") !important;
     }
 }
 
@@ -653,7 +653,7 @@
 
 @container font-mt-extra-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=MT Extra") !important;
+        background-image: url("/fingerprint?font=MT Extra") !important;
     }
 }
 
@@ -672,7 +672,7 @@
 
 @container font-myriad-pro-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=MYRIAD PRO") !important;
+        background-image: url("/fingerprint?font=MYRIAD PRO") !important;
     }
 }
 
@@ -691,7 +691,7 @@
 
 @container font-marlett-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Marlett") !important;
+        background-image: url("/fingerprint?font=Marlett") !important;
     }
 }
 
@@ -710,7 +710,7 @@
 
 @container font-meiryo-ui-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Meiryo UI") !important;
+        background-image: url("/fingerprint?font=Meiryo UI") !important;
     }
 }
 
@@ -729,7 +729,7 @@
 
 @container font-microsoft-uighur-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Microsoft Uighur") !important;
+        background-image: url("/fingerprint?font=Microsoft Uighur") !important;
     }
 }
 
@@ -748,7 +748,7 @@
 
 @container font-minion-pro-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Minion Pro") !important;
+        background-image: url("/fingerprint?font=Minion Pro") !important;
     }
 }
 
@@ -767,7 +767,7 @@
 
 @container font-monotype-corsiva-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Monotype Corsiva") !important;
+        background-image: url("/fingerprint?font=Monotype Corsiva") !important;
     }
 }
 
@@ -786,7 +786,7 @@
 
 @container font-pmingliu-extb-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=PMingLiU-ExtB") !important;
+        background-image: url("/fingerprint?font=PMingLiU-ExtB") !important;
     }
 }
 
@@ -805,7 +805,7 @@
 
 @container font-pristina-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Pristina") !important;
+        background-image: url("/fingerprint?font=Pristina") !important;
     }
 }
 
@@ -824,7 +824,7 @@
 
 @container font-scriptina-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=SCRIPTINA") !important;
+        background-image: url("/fingerprint?font=SCRIPTINA") !important;
     }
 }
 
@@ -843,7 +843,7 @@
 
 @container font-segoe-ui-light-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Segoe UI Light") !important;
+        background-image: url("/fingerprint?font=Segoe UI Light") !important;
     }
 }
 
@@ -862,7 +862,7 @@
 
 @container font-serifa-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Serifa") !important;
+        background-image: url("/fingerprint?font=Serifa") !important;
     }
 }
 
@@ -881,7 +881,7 @@
 
 @container font-simhei-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=SimHei") !important;
+        background-image: url("/fingerprint?font=SimHei") !important;
     }
 }
 
@@ -900,7 +900,7 @@
 
 @container font-small-fonts-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Small Fonts") !important;
+        background-image: url("/fingerprint?font=Small Fonts") !important;
     }
 }
 
@@ -919,7 +919,7 @@
 
 @container font-staccato222-bt-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Staccato222 BT") !important;
+        background-image: url("/fingerprint?font=Staccato222 BT") !important;
     }
 }
 
@@ -938,7 +938,7 @@
 
 @container font-trajan-pro-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=TRAJAN PRO") !important;
+        background-image: url("/fingerprint?font=TRAJAN PRO") !important;
     }
 }
 
@@ -957,7 +957,7 @@
 
 @container font-univers-ce-55-medium-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Univers CE 55 Medium") !important;
+        background-image: url("/fingerprint?font=Univers CE 55 Medium") !important;
     }
 }
 
@@ -976,7 +976,7 @@
 
 @container font-vrinda-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=Vrinda") !important;
+        background-image: url("/fingerprint?font=Vrinda") !important;
     }
 }
 
@@ -995,7 +995,7 @@
 
 @container font-zwadobef-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/font-detection?font=ZWAdobeF") !important;
+        background-image: url("/fingerprint?font=ZWAdobeF") !important;
     }
 }
 
