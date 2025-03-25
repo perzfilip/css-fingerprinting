@@ -26,7 +26,7 @@
 
 @container font-sans-serif-thin-container not (255.8px < width < 257px) {
     p {
-        background-image: url("/fingerprint?font=sans-serif-thin") !important;
+        background-image: url("/fingerprint?font=sans-serif-thin");
     }
 }
 

@@ -90,22 +90,21 @@ def generate_font_rules():
 
     print("HTML and CSS files generated successfully!")
 
-
-def generate_css_rules_env_9(width_start, width_end, height_start, height_end, container_name="env-9-container", attr_name="env-9", output_folder="outputs", output_file="generated.css"):
+def generate_css_container_measure_rules(width_start, width_end, height_start, height_end, name="env-9", output_folder="outputs", output_file="generated.css"):
     css_rules = ""
 
     for px in range(width_start, width_end + 1):
-        rule = (f"@container {container_name} (min-width: {px}px) {{\n"
-                f"    p#env-9-width {{\n"
-                f"        background-image: url(\"/fingerprint?env-9-width={px}\");\n"
+        rule = (f"@container {name}-container (min-width: {px}px) {{\n"
+                f"    p#{name}-width {{\n"
+                f"        background-image: url(\"/fingerprint?{name}-width={px}\");\n"
                 f"    }}\n"
                 f"}}\n\n")
         css_rules += rule
 
     for px in range(height_start, height_end + 1):
-        rule = (f"@container {container_name} (min-height: {px}px) {{\n"
-                f"    p#env-9-height {{\n"
-                f"        background-image: url(\"/fingerprint?env-9-height={px}\");\n"
+        rule = (f"@container {name}-container (min-height: {px}px) {{\n"
+                f"    p#{name}-height {{\n"
+                f"        background-image: url(\"/fingerprint?{name}-height={px}\");\n"
                 f"    }}\n"
                 f"}}\n\n")
         css_rules += rule
@@ -114,6 +113,41 @@ def generate_css_rules_env_9(width_start, width_end, height_start, height_end, c
     with open(os.path.join(output_folder, output_file), "w") as f:
         f.write(css_rules)
 
+def generate_start_rules(name="env-9", output_folder="outputs", items=4):
+    css_rules = ""
+
+    # wrapper rule
+    css_rules += (f"#{name} {{\n"
+                  f"  height: 200px;\n"
+                  f"  width: fit-content;\n"
+                  f"  display: flex;\n"
+                  f"  flex-direction: column;\n"
+                  f"}}\n\n")
+
+    # items rules
+    css_rules += (f"#{name}-items {{\n"
+                  f"  display: grid;\n"
+                  f"  width: fit-content;\n"
+                  f"  flex-grow: 0;\n"
+                  f"}}\n\n")
+
+    for item in range(items):
+        rule = (f"#{name}-item-{item} {{\n"
+                f"  grid-column: {item + 1} / {item + 2};\n"
+                f"  grid-row: {item + 1} / {item + 2};\n"
+                f"}}\n\n")
+        css_rules += rule
+
+    # container rules
+    css_rules += (f"#{name}-container {{\n"
+                  f"  container-name: {name}-container;\n"
+                  f"  container-type: size;\n"
+                  f"  flex-grow: 1;\n"
+                  f"}}\n\n")
+
+    os.makedirs(output_folder, exist_ok=True)
+    with open(os.path.join(output_folder, f"{name}.css"), "w") as f:
+        f.write(css_rules)
 
 def generate_css_viewport(width_start, width_end, height_start, height_end, container_name="viewport", output_folder="outputs", output_file="viewport.css"):
     css_rules = ""
@@ -142,5 +176,9 @@ def generate_css_viewport(width_start, width_end, height_start, height_end, cont
 
 if __name__ == '__main__':
     # generate_font_rules()
-    # generate_css_rules_env_9(500, 700, 50, 150)
-    generate_css_viewport(1, 100, 1, 100)
+    generate_start_rules(name="env-4", items=1)
+    # generate_css_container_measure_rules(400, 600, 150, 200, name="env-2")
+    # generate_css_viewport(1, 100, 1, 100)
+
+# 450.217
+# 182.967

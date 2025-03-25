@@ -1,0 +1,24 @@
+#env-4 {
+  height: 300px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#env-4-items {
+  display: grid;
+  width: fit-content;
+  flex-grow: 0;
+}
+
+#env-4-item-0 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#env-4-container {
+  container-name: env-4-container;
+  container-type: size;
+  flex-grow: 1;
+}
+

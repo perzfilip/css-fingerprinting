@@ -1,0 +1,26 @@
+#env-3 {
+  height: 200px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#env-3-items {
+  display: grid;
+  width: fit-content;
+  flex-grow: 0;
+}
+
+#env-3-item-0 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#env-3-container {
+  container-name: env-3-container;
+  container-type: size;
+  flex-grow: 1;
+}
+
+
+/*todo okreslenie szerokosci address - poczytac jak z tego powinno sie korzystac */

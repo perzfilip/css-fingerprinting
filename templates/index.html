@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='button-width.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='font-detection.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='env-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-2.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-3.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-4.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-5.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-6.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-7.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-8.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-9.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-10.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-11.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-12.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-13.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='env-14.css') }}">
     <title>Main Page</title>
     <style>
         body {
@@ -24,8 +37,8 @@
 
 <div id="viewport-wrapper">
     <div id="container-viewport">
-        <p id="viewport-height">Viewport  height leak</p>
-        <p id="viewport-width">Viewport  width leak</p>
+        <p id="viewport-height">Viewport height leak</p>
+        <p id="viewport-width">Viewport width leak</p>
     </div>
 </div>
 
@@ -52,7 +65,76 @@
     </div>
     <button>dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</button>
 </div>
-
+<!-- ENV-1 detection group -->
+<div id="env-1">
+    <div id="env-1-items">
+        <acronym title="" id="acronym"></acronym>
+        <applet id="applet"></applet>
+        <article id="article"></article>
+        <aside id="aside"></aside>
+        <pre id="pre"></pre>
+        <form action="" id="form"></form>
+        <strike id="strike"></strike>
+        <tt id="tt"></tt>
+    </div>
+    <div id="env-1-container">
+        <p id="env-1-width">Env1W</p>
+        <p id="env-1-height">Env1H</p>
+    </div>
+</div>
+<!-- ENV-2 detection group -->
+<div id="env-2">
+    <div id="env-2-items">
+        <h1 id="env-2-item-0">test</h1>
+        <h2 id="env-2-item-1">test</h2>
+        <h3 id="env-2-item-2">test</h3>
+        <h4 id="env-2-item-3">test</h4>
+        <h5 id="env-2-item-4">test</h5>
+        <h6 id="env-2-item-5">test</h6>
+        <picture id="env-2-item-6">test</picture>
+        <time id="env-2-item-7">test</time>
+        <del id="env-2-item-8">test</del>
+        <details id="env-2-item-9">test</details>
+        <figure id="env-2-item-10">test</figure>
+        <img src="" alt="" id="env-2-item-11">
+    </div>
+    <div id="env-2-container">
+        <p id="env-2-width">Env2W</p>
+        <p id="env-2-height">Env2H</p>
+    </div>
+</div>
+<!-- ENV-3 detection group -->
+<div id="env-3">
+    <div id="env-3-items">
+<!-- todo ogarnac jak z tego sie korzysta -->
+        <address id="env-3-item-0">Address text</address>
+    </div>
+    <div id="env-3-container">
+        <p id="env-3-width">Env3W</p>
+        <p id="env-3-height">Env3H</p>
+    </div>
+</div>
+<!-- todo ENV-4 detection group -->
+<div id="env-4">
+    <div id="env-4-items">
+        <canvas id="env-4-item-0"></canvas>
+    </div>
+    <div id="env-4-container">
+        <p id="env-4-width">Env4W</p>
+        <p id="env-4-height">Env4H</p>
+    </div>
+</div>
+<!-- todo ENV-5 detection group -->
+<!-- ENV-6 detection group -->
+<div id="env-6">
+    <div id="env-6-items">
+        <textarea name="textarea" id="input-textarea"></textarea>
+    </div>
+    <div id="env-6-container">
+        <p id="env-6-width">Env6W</p>
+        <p id="env-6-height">Env6H</p>
+    </div>
+</div>
 <!-- ENV-9 detection group -->
 <div id="env-9">
     <div id="env-9-items">
@@ -66,7 +148,31 @@
         <p id="env-9-height">Env 9 input measure height</p>
     </div>
 </div>
-
+<!-- todo ENV-10 detection group -->
+<!-- ENV-11 detection group -->
+<div id="env-11">
+    <div id="env-11-items">
+        <input type="datetime" name="datetime" id="input-datetime">
+        <input type="datetime-local" name="datetime-local" id="input-datetime-local">
+        <input type="tel" name="tel" id="input-tel">
+        <input type="radio" name="radio" id="input-radio">
+        <input type="reset" value="" name="reset" id="input-reset">
+        <input type="submit" value="" name="submit" id="input-submit">
+        <input type="image" src="" alt="" name="image" id="input-image">
+        <input type="text" name="text" id="input-text">
+        <input type="email" name="email" id="input-email">
+        <input type="search" name="search" id="input-search">
+        <input type="url" name="url" id="input-url">
+        <input type="checkbox" name="checkbox" id="input-checkbox">
+    </div>
+    <div id="env-11-container">
+        <p id="env-11-width">Env 11 input measure width</p>
+        <p id="env-11-height">Env 11 input measure height</p>
+    </div>
+</div>
+<!-- todo ENV-12 detection group -->
+<!-- todo ENV-13 detection group -->
+<!-- todo ENV-14 detection group -->
 <!-- font detection -->
 <div id="font-detection">
     <div class="font-detection-wrapper">
