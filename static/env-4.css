@@ -1,24 +1,38 @@
 #env-4 {
-  height: 300px;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
+    height: 300px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 #env-4-items {
-  display: grid;
-  width: fit-content;
-  flex-grow: 0;
+    display: grid;
+    width: fit-content;
+    flex-grow: 0;
 }
 
 #env-4-item-0 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 #env-4-container {
-  container-name: env-4-container;
-  container-type: size;
-  flex-grow: 1;
+    container-name: env-4-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+/*300 szerokosci - to canvas dziala*/
+/*ponad 700 - wyłączony JS, canvas nie działa*/
+@container env-4-container (width < 500px) {
+    p#env-4-width {
+        background-image: url("/fingerprint?javascript=enabled");
+    }
+}
+
+@container env-4-container (width > 500px) {
+    p#env-4-width {
+        background-image: url("/fingerprint?javascript=disabled");
+    }
 }
 

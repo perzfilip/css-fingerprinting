@@ -1,1 +1,39 @@
-/*todo implementacja env-13 */
+#env-13 {
+  height: 200px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#env-13-items {
+  display: grid;
+  width: fit-content;
+  flex-grow: 0;
+}
+
+#env-13-item-0 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#env-13-item-1 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#env-13-item-2 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+#env-13-item-3 {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+}
+
+#env-13-container {
+  container-name: env-13-container;
+  container-type: size;
+  flex-grow: 1;
+}
+
