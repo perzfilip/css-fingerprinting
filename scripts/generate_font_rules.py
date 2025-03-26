@@ -174,11 +174,21 @@ def generate_css_viewport(width_start, width_end, height_start, height_end, cont
     with open(os.path.join(output_folder, output_file), "w") as f:
         f.write(css_rules)
 
+
+def generate_iso_strings(start, end, output_folder="outputs", output_file="iso_strings.txt"):
+    os.makedirs(output_folder, exist_ok=True)
+    iso_strings = [f"&#{i};" for i in range(start, end + 1)]
+
+    with open(os.path.join(output_folder, output_file), "w", encoding="utf-8") as file:
+        for string in iso_strings:
+            file.write(string + "\n")
+
 if __name__ == '__main__':
     # generate_font_rules()
     # generate_start_rules(name="env-14", items=9)
-    generate_css_container_measure_rules(550, 650, 50, 150, name="env-5")
+    generate_css_container_measure_rules(6900, 7000, 100, 150, name="env-12")
     # generate_css_viewport(1, 100, 1, 100)
+    # generate_iso_strings(8704, 8959)
 
 # 450.217
 # 182.967
