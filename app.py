@@ -65,7 +65,7 @@ def fingerprint():
     for attr_name, attr_value in attributes.items():
         add_attribute(attr_name, attr_value)
 
-    image_path = os.path.join('images', 'white.png')
+    image_path = os.path.join('images', 'green.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)
 
 

@@ -186,7 +186,7 @@ def generate_iso_strings(start, end, output_folder="outputs", output_file="iso_s
 if __name__ == '__main__':
     # generate_font_rules()
     # generate_start_rules(name="env-14", items=9)
-    generate_css_container_measure_rules(6900, 7000, 100, 150, name="env-12")
+    generate_css_container_measure_rules(150, 250, 100, 150, name="env-11")
     # generate_css_viewport(1, 100, 1, 100)
     # generate_iso_strings(8704, 8959)
 
