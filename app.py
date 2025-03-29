@@ -19,6 +19,7 @@ class CSSAttribute(db.Model):
     session_id = db.Column(db.String(100), nullable=False)
     attribute = db.Column(db.String(100), nullable=False)
     value = db.Column(db.String(100), nullable=False)
+    source = db.Column(db.String(100), nullable=False)
 
     def __repr__(self):
         return f"CSSAttribute({self.session_id}, {self.attribute}, {self.value})"
@@ -44,7 +45,7 @@ def add_attribute(attribute, value):
         logger.error(f"Could not save attribute {attribute} in database, because there is no session id")
         return
 
-    attribute = CSSAttribute(session_id=str(session['session_id']), attribute=attribute, value=value)
+    attribute = CSSAttribute(session_id=str(session['session_id']), attribute=attribute, value=value, source='css')
     db.session.add(attribute)
     db.session.commit()
 
@@ -54,7 +55,7 @@ def home():
     # save user agent to the sqlite database
     add_attribute('User-Agent', request.headers.get('User-Agent'))
     logger.debug(f"User-Agent: {request.headers.get('User-Agent')}")
-
+    logger.debug(f"Session ID: {session['session_id']}")
     return render_template('index.html')
 
 
