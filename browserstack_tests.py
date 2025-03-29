@@ -62,7 +62,6 @@ try:
         device_info = driver.execute_script('browserstack_executor: {"action": "getSessionDetails"}')
         device_info = json.loads(device_info)
         window_size = driver.get_window_size()
-        # browser_version = driver.capabilities['browserVersion']
 
         # get session_id from cookie
         session_id = decode_flask_session_cookie(driver.get_cookie('session')['value'])
@@ -74,13 +73,13 @@ try:
         pprint(device_info)
 
         # save device information to a database
-        # save_to_db(session_id, 'browser', device_info['browser'])
-        # save_to_db(session_id, 'browser_version', device_info['browser_version'])
-        # save_to_db(session_id, 'os', device_info['os'])
-        # save_to_db(session_id, 'os_version', device_info['os_version'])
-        # save_to_db(session_id, 'browser', device_info['browser'])
-        # save_to_db(session_id, 'real_height', window_size['height'])
-        # save_to_db(session_id, 'real_width', window_size['width'])
+        save_to_db(session_id, 'browser', device_info['browser'] if device_info['browser'] is not None else 'unknown')
+        save_to_db(session_id, 'browser_version', device_info['browser_version'] if device_info['browser_version'] is not None else 'unknown')
+        save_to_db(session_id, 'os', device_info['os'] if device_info['os'] is not None else 'unknown')
+        save_to_db(session_id, 'os_version', device_info['os_version'] if device_info['os_version'] is not None else 'unknown')
+        save_to_db(session_id, 'browser', device_info['browser'] if device_info['browser'] is not None else 'unknown')
+        save_to_db(session_id, 'real_height', window_size['height'] if window_size['height'] is not None else 'unknown')
+        save_to_db(session_id, 'real_width', window_size['width'] if window_size['width'] is not None else 'unknown')
 
         # set the status of the test as passed
         driver.execute_script(
