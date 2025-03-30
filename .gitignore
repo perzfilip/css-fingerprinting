@@ -484,4 +484,4 @@ instance/*
 
 # config files
 config.py
-browserstack.yml
+browserstack_tests/browserstack.yml

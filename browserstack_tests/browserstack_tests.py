@@ -8,9 +8,8 @@ import jwt
 from itsdangerous import URLSafeTimedSerializer
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
-from config import SECRET_KEY
 
-DB_PATH = "instance/database.db"
+DB_PATH = "../instance/database.db"
 
 
 
@@ -61,16 +60,20 @@ try:
         # collect data about the device from browserstack
         device_info = driver.execute_script('browserstack_executor: {"action": "getSessionDetails"}')
         device_info = json.loads(device_info)
-        window_size = driver.get_window_size()
+        try:
+            window_size = driver.get_window_size()
+        except Exception as e:
+            window_size = {'height': None, 'width': None}
 
+        # todo wait for the whole page to load so a little bit of timeout is needed
         # get session_id from cookie
         session_id = decode_flask_session_cookie(driver.get_cookie('session')['value'])
 
         # print the device information
-        print(f"============\nsession_id: {session_id}\n============")
-        print(f"============\nwindow_size: {window_size}\n============")
-        print(f"============\nbrowser_version: {driver.capabilities}\n============")
-        pprint(device_info)
+        # print(f"============\nsession_id: {session_id}\n============")
+        # print(f"============\nwindow_size: {window_size}\n============")
+        # print(f"============\nbrowser_version: {driver.capabilities}\n============")
+        # pprint(device_info)
 
         # save device information to a database
         save_to_db(session_id, 'browser', device_info['browser'] if device_info['browser'] is not None else 'unknown')
