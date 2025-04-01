@@ -67,7 +67,10 @@ try:
 
         # todo wait for the whole page to load so a little bit of timeout is needed
         # get session_id from cookie
-        session_id = decode_flask_session_cookie(driver.get_cookie('session')['value'])
+        # pprint(driver.get_cookies()[0]['value'])
+        session_id = decode_flask_session_cookie(driver.get_cookies()[0]['value'])
+
+
 
         # print the device information
         # print(f"============\nsession_id: {session_id}\n============")

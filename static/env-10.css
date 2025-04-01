@@ -42,6 +42,8 @@
   flex-grow: 1;
 }
 
+/*todo env-10 bez embeda ma tylko 433 szerokosci*/
+
 @container env-10-container (min-width: 700px) {
     p#env-10-width {
         background-image: url("/fingerprint?env-10-width=700");

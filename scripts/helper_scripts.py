@@ -1,4 +1,7 @@
 import os
+import sqlite3
+from collections import defaultdict
+
 
 def generate_font_rules():
     fonts = [
@@ -182,6 +185,7 @@ def generate_iso_strings(start, end, output_folder="outputs", output_file="iso_s
     with open(os.path.join(output_folder, output_file), "w", encoding="utf-8") as file:
         for string in iso_strings:
             file.write(string + "\n")
+
 
 if __name__ == '__main__':
     # generate_font_rules()

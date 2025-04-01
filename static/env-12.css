@@ -43,6 +43,8 @@
   flex-grow: 1;
 }
 
+/*todo szerokosc moze byc 6762, 6755*/
+
 @container env-12-container (min-width: 6900px) {
     p#env-12-width {
         background-image: url("/fingerprint?env-12-width=6900");

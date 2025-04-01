@@ -79,6 +79,8 @@
     flex-grow: 1;
 }
 
+/* todo on moze miec szerokosc nawet 1266, 1202*/
+
 @container env-11-container (min-width: 1300px) {
     p#env-11-width {
         background-image: url("/fingerprint?env-11-width=1300");
