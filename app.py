@@ -40,12 +40,12 @@ def make_session_permanent():
         session['session_id'] = uuid.uuid4()
 
 
-def add_attribute(attribute, value):
+def add_attribute(attribute, value, source='css'):
     if not 'session_id' in session:
         logger.error(f"Could not save attribute {attribute} in database, because there is no session id")
         return
 
-    attribute = CSSAttribute(session_id=str(session['session_id']), attribute=attribute, value=value, source='css')
+    attribute = CSSAttribute(session_id=str(session['session_id']), attribute=attribute, value=value, source=source)
     db.session.add(attribute)
     db.session.commit()
 
@@ -68,6 +68,20 @@ def fingerprint():
 
     image_path = os.path.join('images', 'green.png')
     return send_file(image_path, mimetype='image/png', environ=request.environ)
+
+@app.route('/report-dimensions', methods=['POST'])
+def report_dimensions():
+    data = request.json
+    container_id = data.get('container_id')
+    width = data.get('width')
+    height = data.get('height')
+
+    if container_id and width is not None and height is not None:
+        add_attribute(f"{container_id}-width", width, source='js')
+        add_attribute(f"{container_id}-height", height, source='js')
+        return '', 204
+    else:
+        return 'Invalid data', 400
 
 
 if __name__ == '__main__':
