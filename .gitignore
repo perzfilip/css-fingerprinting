@@ -482,6 +482,9 @@ instance/*
 .webassets-cache
 .env
 
+# exclude needed database file
+!instance/database_find_mistakes.db
+
 # config files
 config.py
 browserstack_tests/browserstack.yml
