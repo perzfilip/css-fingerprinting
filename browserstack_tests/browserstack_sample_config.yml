@@ -1,0 +1,38 @@
+accessKey: fill_me_in
+browserstackLocal: true
+buildIdentifier: '#${BUILD_NUMBER}'
+buildName: Autotest 2025-04-02 20:28:22
+consoleLogs: errors
+debug: false
+idleTimeout: 120
+networkLogs: false
+platforms:
+- browser: firefox
+  browser_version: '103.0'
+  os: OS X
+  os_version: Sonoma
+- browser: chrome
+  browser_version: '128.0'
+  os: OS X
+  os_version: Catalina
+- browser: edge
+  browser_version: '134.0'
+  os: Windows
+  os_version: '10'
+- browser: chromium
+  device: iPhone 12 Pro
+  os: ios
+  os_version: '14'
+  real_mobile: true
+- browser: samsung
+  device: Samsung Galaxy Note 9
+  os: android
+  os_version: '8.1'
+  real_mobile: true
+- browser: firefox
+  browser_version: 137.0 beta
+  os: Windows
+  os_version: '10'
+projectName: CSS Fingerprinting
+source: python-browserstack:sample-sdk:v1.0
+userName: fill_me_in
