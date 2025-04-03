@@ -479,11 +479,12 @@ cython_debug/
 ### Flask template
 instance/*
 !instance/.gitignore
+!instance/database_find_mistakes.db
 .webassets-cache
 .env
 
 # exclude needed database file
-!instance/database_find_mistakes.db
+
 
 # config files
 config.py
