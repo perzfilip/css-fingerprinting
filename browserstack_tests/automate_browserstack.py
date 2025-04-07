@@ -112,4 +112,4 @@ def main(number_of_platforms=100):
 
 
 if __name__ == "__main__":
-    main(300)
+    main(6)
