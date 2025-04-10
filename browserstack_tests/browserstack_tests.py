@@ -51,6 +51,10 @@ driver = webdriver.Remote(
 
 try:
     driver.get('http://localhost:5000')
+
+    # wait for the page to load
+    driver.implicitly_wait(5)
+
     page_title = driver.title
 
 
@@ -65,12 +69,9 @@ try:
         except Exception as e:
             window_size = {'height': None, 'width': None}
 
-        # todo wait for the whole page to load so a little bit of timeout is needed
         # get session_id from cookie
         # pprint(driver.get_cookies()[0]['value'])
         session_id = decode_flask_session_cookie(driver.get_cookies()[0]['value'])
-
-
 
         # print the device information
         # print(f"============\nsession_id: {session_id}\n============")
@@ -86,6 +87,9 @@ try:
         save_to_db(session_id, 'browser', device_info['browser'] if device_info['browser'] is not None else 'unknown')
         save_to_db(session_id, 'real_height', window_size['height'] if window_size['height'] is not None else 'unknown')
         save_to_db(session_id, 'real_width', window_size['width'] if window_size['width'] is not None else 'unknown')
+
+        # save the session_id to browserstack
+        driver.execute_script('browserstack_executor: {"action": "setSessionName", "arguments": {"name": "' + session_id + '"}}')
 
         # set the status of the test as passed
         driver.execute_script(

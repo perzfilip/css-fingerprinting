@@ -47,7 +47,7 @@ def chunk_platforms(platforms, chunk_size=6):
         yield platforms[i:i + chunk_size]
 
 
-def get_random_platforms(number_of_platforms, file='browsers_cleaned_2.json'):
+def get_random_platforms(number_of_platforms, file='browsers_cleaned_3.json'):
     try:
         with open(file, 'r', encoding='utf-8') as file:
             data = json.load(file)
@@ -112,4 +112,4 @@ def main(number_of_platforms=100):
 
 
 if __name__ == "__main__":
-    main(6)
+    main(1000)
