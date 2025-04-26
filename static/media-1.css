@@ -1,0 +1,296 @@
+#media-1 {
+    height: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#media-1-items {
+    display: grid;
+    width: fit-content;
+    flex-grow: 0;
+}
+
+/* Grid positioning */
+#media-1-item-0 {
+    grid-column: 1 / 2;
+}
+
+#media-1-item-1 {
+    grid-column: 2 / 3;
+}
+
+#media-1-item-2 {
+    grid-column: 3 / 4;
+}
+
+#media-1-item-3 {
+    grid-column: 4 / 5;
+}
+
+#media-1-item-4 {
+    grid-column: 5 / 6;
+}
+
+
+#media-1-container {
+    container-name: media-1-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+@media screen {
+    #media-1-item-0 {
+        width: 1px;
+        height: 0;
+    }
+}
+/**/
+@media print {
+    #media-1-item-1 {
+        width: 2px;
+        height: 0;
+    }
+}
+
+@media speech {
+    #media-1-item-2 {
+        width: 4px;
+        height: 0;
+    }
+}
+
+@media (orientation: landscape) {
+    #media-1-item-3 {
+        width: 8px;
+        height: 0;
+    }
+}
+
+@media (orientation: portrait) {
+    #media-1-item-4 {
+        width: 16px;
+        height: 0;
+    }
+}
+
+@media (dynamic-range: standard) {
+    #media-1-item-5 {
+        width: 32px;
+        height: 0;
+    }
+}
+
+@media (dynamic-range: high) {
+    #media-1-item-6 {
+        width: 64px;
+        height: 0;
+    }
+}
+
+
+@container media-1-container (min-width: 0px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=0");
+    }
+}
+
+@container media-1-container (min-width: 1px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=1");
+    }
+}
+
+@container media-1-container (min-width: 2px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=2");
+    }
+}
+
+@container media-1-container (min-width: 3px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=3");
+    }
+}
+
+@container media-1-container (min-width: 4px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=4");
+    }
+}
+
+@container media-1-container (min-width: 5px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=5");
+    }
+}
+
+@container media-1-container (min-width: 6px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=6");
+    }
+}
+
+@container media-1-container (min-width: 7px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=7");
+    }
+}
+
+@container media-1-container (min-width: 8px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=8");
+    }
+}
+
+@container media-1-container (min-width: 9px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=9");
+    }
+}
+
+@container media-1-container (min-width: 10px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=10");
+    }
+}
+
+@container media-1-container (min-width: 11px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=11");
+    }
+}
+
+@container media-1-container (min-width: 12px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=12");
+    }
+}
+
+@container media-1-container (min-width: 13px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=13");
+    }
+}
+
+@container media-1-container (min-width: 14px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=14");
+    }
+}
+
+@container media-1-container (min-width: 15px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=15");
+    }
+}
+
+@container media-1-container (min-width: 16px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=16");
+    }
+}
+
+@container media-1-container (min-width: 17px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=17");
+    }
+}
+
+@container media-1-container (min-width: 18px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=18");
+    }
+}
+
+@container media-1-container (min-width: 19px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=19");
+    }
+}
+
+@container media-1-container (min-width: 20px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=20");
+    }
+}
+
+@container media-1-container (min-width: 21px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=21");
+    }
+}
+
+@container media-1-container (min-width: 22px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=22");
+    }
+}
+
+@container media-1-container (min-width: 23px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=23");
+    }
+}
+
+@container media-1-container (min-width: 24px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=24");
+    }
+}
+
+@container media-1-container (min-width: 25px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=25");
+    }
+}
+
+@container media-1-container (min-width: 26px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=26");
+    }
+}
+
+@container media-1-container (min-width: 27px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=27");
+    }
+}
+
+@container media-1-container (min-width: 28px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=28");
+    }
+}
+
+@container media-1-container (min-width: 29px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=29");
+    }
+}
+
+@container media-1-container (min-width: 30px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=30");
+    }
+}
+
+@container media-1-container (min-width: 31px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=31");
+    }
+}
+
+@container media-1-container (min-width: 32px) {
+    p#media-1-width {
+        background-image: url("/fingerprint?media-1-width=32");
+    }
+}
+
+@container media-1-container (min-height: 0px) {
+    p#media-1-height {
+        background-image: url("/fingerprint?media-1-height=0");
+    }
+}
+
+

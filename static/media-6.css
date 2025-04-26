@@ -1,0 +1,871 @@
+#media-6 {
+    height: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#media-6-items {
+    display: grid;
+    width: fit-content;
+    flex-grow: 0;
+}
+
+/* Grid positioning */
+#media-6-item-0 {
+    grid-column: 1 / 2;
+}
+
+#media-6-item-1 {
+    grid-column: 2 / 3;
+}
+
+#media-6-item-2 {
+    grid-column: 3 / 4;
+}
+
+#media-6-item-3 {
+    grid-column: 4 / 5;
+}
+
+#media-6-item-4 {
+    grid-column: 5 / 6;
+}
+
+#media-6-item-5 {
+    grid-column: 6 / 7;
+}
+
+#media-6-item-6 {
+    grid-column: 7 / 8;
+}
+
+
+#media-6-container {
+    container-name: media-6-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+@media (color-gamut: p3) {
+    #media-6-item-0 {
+        width: 1px;
+        height: 0;
+    }
+}
+
+@media (color-gamut: rec2020) {
+    #media-6-item-1 {
+        width: 2px;
+        height: 0;
+    }
+}
+
+@media (hover: hover) {
+    #media-6-item-2 {
+        width: 4px;
+        height: 0;
+    }
+}
+
+@media (hover: none) {
+    #media-6-item-3 {
+        width: 8px;
+        height: 0;
+    }
+}
+
+@media (pointer: fine) {
+    #media-6-item-4 {
+        width: 16px;
+        height: 0;
+    }
+}
+
+@media (pointer: coarse) {
+    #media-6-item-5 {
+        width: 32px;
+        height: 0;
+    }
+}
+
+@media (pointer: none) {
+    #media-6-item-6 {
+        width: 64px;
+        height: 0;
+    }
+}
+
+@container media-6-container (min-width: 0px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=0");
+    }
+}
+
+@container media-6-container (min-width: 1px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=1");
+    }
+}
+
+@container media-6-container (min-width: 2px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=2");
+    }
+}
+
+@container media-6-container (min-width: 3px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=3");
+    }
+}
+
+@container media-6-container (min-width: 4px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=4");
+    }
+}
+
+@container media-6-container (min-width: 5px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=5");
+    }
+}
+
+@container media-6-container (min-width: 6px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=6");
+    }
+}
+
+@container media-6-container (min-width: 7px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=7");
+    }
+}
+
+@container media-6-container (min-width: 8px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=8");
+    }
+}
+
+@container media-6-container (min-width: 9px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=9");
+    }
+}
+
+@container media-6-container (min-width: 10px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=10");
+    }
+}
+
+@container media-6-container (min-width: 11px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=11");
+    }
+}
+
+@container media-6-container (min-width: 12px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=12");
+    }
+}
+
+@container media-6-container (min-width: 13px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=13");
+    }
+}
+
+@container media-6-container (min-width: 14px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=14");
+    }
+}
+
+@container media-6-container (min-width: 15px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=15");
+    }
+}
+
+@container media-6-container (min-width: 16px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=16");
+    }
+}
+
+@container media-6-container (min-width: 17px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=17");
+    }
+}
+
+@container media-6-container (min-width: 18px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=18");
+    }
+}
+
+@container media-6-container (min-width: 19px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=19");
+    }
+}
+
+@container media-6-container (min-width: 20px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=20");
+    }
+}
+
+@container media-6-container (min-width: 21px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=21");
+    }
+}
+
+@container media-6-container (min-width: 22px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=22");
+    }
+}
+
+@container media-6-container (min-width: 23px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=23");
+    }
+}
+
+@container media-6-container (min-width: 24px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=24");
+    }
+}
+
+@container media-6-container (min-width: 25px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=25");
+    }
+}
+
+@container media-6-container (min-width: 26px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=26");
+    }
+}
+
+@container media-6-container (min-width: 27px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=27");
+    }
+}
+
+@container media-6-container (min-width: 28px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=28");
+    }
+}
+
+@container media-6-container (min-width: 29px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=29");
+    }
+}
+
+@container media-6-container (min-width: 30px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=30");
+    }
+}
+
+@container media-6-container (min-width: 31px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=31");
+    }
+}
+
+@container media-6-container (min-width: 32px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=32");
+    }
+}
+
+@container media-6-container (min-width: 33px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=33");
+    }
+}
+
+@container media-6-container (min-width: 34px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=34");
+    }
+}
+
+@container media-6-container (min-width: 35px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=35");
+    }
+}
+
+@container media-6-container (min-width: 36px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=36");
+    }
+}
+
+@container media-6-container (min-width: 37px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=37");
+    }
+}
+
+@container media-6-container (min-width: 38px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=38");
+    }
+}
+
+@container media-6-container (min-width: 39px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=39");
+    }
+}
+
+@container media-6-container (min-width: 40px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=40");
+    }
+}
+
+@container media-6-container (min-width: 41px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=41");
+    }
+}
+
+@container media-6-container (min-width: 42px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=42");
+    }
+}
+
+@container media-6-container (min-width: 43px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=43");
+    }
+}
+
+@container media-6-container (min-width: 44px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=44");
+    }
+}
+
+@container media-6-container (min-width: 45px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=45");
+    }
+}
+
+@container media-6-container (min-width: 46px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=46");
+    }
+}
+
+@container media-6-container (min-width: 47px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=47");
+    }
+}
+
+@container media-6-container (min-width: 48px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=48");
+    }
+}
+
+@container media-6-container (min-width: 49px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=49");
+    }
+}
+
+@container media-6-container (min-width: 50px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=50");
+    }
+}
+
+@container media-6-container (min-width: 51px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=51");
+    }
+}
+
+@container media-6-container (min-width: 52px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=52");
+    }
+}
+
+@container media-6-container (min-width: 53px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=53");
+    }
+}
+
+@container media-6-container (min-width: 54px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=54");
+    }
+}
+
+@container media-6-container (min-width: 55px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=55");
+    }
+}
+
+@container media-6-container (min-width: 56px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=56");
+    }
+}
+
+@container media-6-container (min-width: 57px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=57");
+    }
+}
+
+@container media-6-container (min-width: 58px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=58");
+    }
+}
+
+@container media-6-container (min-width: 59px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=59");
+    }
+}
+
+@container media-6-container (min-width: 60px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=60");
+    }
+}
+
+@container media-6-container (min-width: 61px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=61");
+    }
+}
+
+@container media-6-container (min-width: 62px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=62");
+    }
+}
+
+@container media-6-container (min-width: 63px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=63");
+    }
+}
+
+@container media-6-container (min-width: 64px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=64");
+    }
+}
+
+@container media-6-container (min-width: 65px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=65");
+    }
+}
+
+@container media-6-container (min-width: 66px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=66");
+    }
+}
+
+@container media-6-container (min-width: 67px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=67");
+    }
+}
+
+@container media-6-container (min-width: 68px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=68");
+    }
+}
+
+@container media-6-container (min-width: 69px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=69");
+    }
+}
+
+@container media-6-container (min-width: 70px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=70");
+    }
+}
+
+@container media-6-container (min-width: 71px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=71");
+    }
+}
+
+@container media-6-container (min-width: 72px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=72");
+    }
+}
+
+@container media-6-container (min-width: 73px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=73");
+    }
+}
+
+@container media-6-container (min-width: 74px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=74");
+    }
+}
+
+@container media-6-container (min-width: 75px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=75");
+    }
+}
+
+@container media-6-container (min-width: 76px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=76");
+    }
+}
+
+@container media-6-container (min-width: 77px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=77");
+    }
+}
+
+@container media-6-container (min-width: 78px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=78");
+    }
+}
+
+@container media-6-container (min-width: 79px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=79");
+    }
+}
+
+@container media-6-container (min-width: 80px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=80");
+    }
+}
+
+@container media-6-container (min-width: 81px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=81");
+    }
+}
+
+@container media-6-container (min-width: 82px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=82");
+    }
+}
+
+@container media-6-container (min-width: 83px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=83");
+    }
+}
+
+@container media-6-container (min-width: 84px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=84");
+    }
+}
+
+@container media-6-container (min-width: 85px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=85");
+    }
+}
+
+@container media-6-container (min-width: 86px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=86");
+    }
+}
+
+@container media-6-container (min-width: 87px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=87");
+    }
+}
+
+@container media-6-container (min-width: 88px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=88");
+    }
+}
+
+@container media-6-container (min-width: 89px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=89");
+    }
+}
+
+@container media-6-container (min-width: 90px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=90");
+    }
+}
+
+@container media-6-container (min-width: 91px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=91");
+    }
+}
+
+@container media-6-container (min-width: 92px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=92");
+    }
+}
+
+@container media-6-container (min-width: 93px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=93");
+    }
+}
+
+@container media-6-container (min-width: 94px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=94");
+    }
+}
+
+@container media-6-container (min-width: 95px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=95");
+    }
+}
+
+@container media-6-container (min-width: 96px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=96");
+    }
+}
+
+@container media-6-container (min-width: 97px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=97");
+    }
+}
+
+@container media-6-container (min-width: 98px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=98");
+    }
+}
+
+@container media-6-container (min-width: 99px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=99");
+    }
+}
+
+@container media-6-container (min-width: 100px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=100");
+    }
+}
+
+@container media-6-container (min-width: 101px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=101");
+    }
+}
+
+@container media-6-container (min-width: 102px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=102");
+    }
+}
+
+@container media-6-container (min-width: 103px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=103");
+    }
+}
+
+@container media-6-container (min-width: 104px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=104");
+    }
+}
+
+@container media-6-container (min-width: 105px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=105");
+    }
+}
+
+@container media-6-container (min-width: 106px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=106");
+    }
+}
+
+@container media-6-container (min-width: 107px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=107");
+    }
+}
+
+@container media-6-container (min-width: 108px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=108");
+    }
+}
+
+@container media-6-container (min-width: 109px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=109");
+    }
+}
+
+@container media-6-container (min-width: 110px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=110");
+    }
+}
+
+@container media-6-container (min-width: 111px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=111");
+    }
+}
+
+@container media-6-container (min-width: 112px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=112");
+    }
+}
+
+@container media-6-container (min-width: 113px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=113");
+    }
+}
+
+@container media-6-container (min-width: 114px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=114");
+    }
+}
+
+@container media-6-container (min-width: 115px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=115");
+    }
+}
+
+@container media-6-container (min-width: 116px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=116");
+    }
+}
+
+@container media-6-container (min-width: 117px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=117");
+    }
+}
+
+@container media-6-container (min-width: 118px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=118");
+    }
+}
+
+@container media-6-container (min-width: 119px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=119");
+    }
+}
+
+@container media-6-container (min-width: 120px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=120");
+    }
+}
+
+@container media-6-container (min-width: 121px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=121");
+    }
+}
+
+@container media-6-container (min-width: 122px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=122");
+    }
+}
+
+@container media-6-container (min-width: 123px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=123");
+    }
+}
+
+@container media-6-container (min-width: 124px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=124");
+    }
+}
+
+@container media-6-container (min-width: 125px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=125");
+    }
+}
+
+@container media-6-container (min-width: 126px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=126");
+    }
+}
+
+@container media-6-container (min-width: 127px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=127");
+    }
+}
+
+@container media-6-container (min-width: 128px) {
+    p#media-6-width {
+        background-image: url("/fingerprint?media-6-width=128");
+    }
+}

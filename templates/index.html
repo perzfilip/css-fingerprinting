@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='viewport-width.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='image-set.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='os-identification.css') }}">
@@ -23,6 +23,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='env-12.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='env-13.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='env-14.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-2.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-3.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-4.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-5.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-6.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-7.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-8.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-9.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media-10.css') }}">
     <title>CSS Fingerprinting</title>
 </head>
 <body>
@@ -39,21 +49,27 @@
     </div>
 </div>
 
+<div class="divider"></div>
 
-<br><br>
 <!-- image-set leak -->
 <div id="container-image-set1">
     <p id="pimage-set">Image set leak</p>
 </div>
+
+<div class="divider"></div>
+
 <div id="container-image-set2">
     <p id="pimage-set2">Image set leak</p>
 </div>
 
+<div class="divider"></div>
 <!-- OS identification -->
 <div id="calc-wrapper">
     <div id="targetCalc"></div>
     <div id="containerCalc"><span id="calcWindows">Windows 11</span><span id="calcUbuntu">Linux</span></div>
 </div>
+
+<div class="divider"></div>
 
 <!-- button width detection -->
 <div id="button-wrapper">
@@ -809,6 +825,167 @@
         <p id="env-14-height">Env14H</p>
     </div>
 </div>
+<div class="divider"></div>
+<!-- MEDIA-1 detection group - media type and orientation -->
+<div id="media-1">
+    <div id="media-1-items">
+        <div id="media-1-item-0"></div>
+        <div id="media-1-item-1"></div>
+        <div id="media-1-item-2"></div>
+        <div id="media-1-item-3"></div>
+        <div id="media-1-item-4"></div>
+        <div id="media-1-item-5"></div>
+        <div id="media-1-item-6"></div>
+    </div>
+    <div id="media-1-container">
+        <p id="media-1-width">Media1W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- MEDIA-2 detection group - media features (boolean or values) -->
+<div id="media-2">
+    <div id="media-2-items">
+        <div id="media-2-item-0"></div>
+        <div id="media-2-item-1"></div>
+        <div id="media-2-item-2"></div>
+        <div id="media-2-item-3"></div>
+        <div id="media-2-item-4"></div>
+        <div id="media-2-item-5"></div>
+        <div id="media-2-item-6"></div>
+    </div>
+    <div id="media-2-container">
+        <p id="media-2-width">Media2W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- MEDIA-3 detection group - media features (boolean or values) -->
+<div id="media-3">
+    <div id="media-3-items">
+        <div id="media-3-item-0"></div>
+        <div id="media-3-item-1"></div>
+        <div id="media-3-item-2"></div>
+        <div id="media-3-item-3"></div>
+        <div id="media-3-item-4"></div>
+        <div id="media-3-item-5"></div>
+        <div id="media-3-item-6"></div>
+    </div>
+    <div id="media-3-container">
+        <p id="media-3-width">Media3W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- media-4 detection group - media features (boolean or values) -->
+<div id="media-4">
+    <div id="media-4-items">
+        <div id="media-4-item-0"></div>
+        <div id="media-4-item-1"></div>
+        <div id="media-4-item-2"></div>
+        <div id="media-4-item-3"></div>
+        <div id="media-4-item-4"></div>
+        <div id="media-4-item-5"></div>
+        <div id="media-4-item-6"></div>
+    </div>
+    <div id="media-4-container">
+        <p id="media-4-width">Media4W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- media-5 detection group - media features (boolean or values) -->
+<div id="media-5">
+    <div id="media-5-items">
+        <div id="media-5-item-0"></div>
+        <div id="media-5-item-1"></div>
+        <div id="media-5-item-2"></div>
+        <div id="media-5-item-3"></div>
+        <div id="media-5-item-4"></div>
+        <div id="media-5-item-5"></div>
+        <div id="media-5-item-6"></div>
+    </div>
+    <div id="media-5-container">
+        <p id="media-5-width">Media5W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- media-6 detection group - media features (boolean or values) -->
+<div id="media-6">
+    <div id="media-6-items">
+        <div id="media-6-item-0"></div>
+        <div id="media-6-item-1"></div>
+        <div id="media-6-item-2"></div>
+        <div id="media-6-item-3"></div>
+        <div id="media-6-item-4"></div>
+        <div id="media-6-item-5"></div>
+        <div id="media-6-item-6"></div>
+    </div>
+    <div id="media-6-container">
+        <p id="media-6-width">Media6W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- media-7 detection group - media features (boolean or values) -->
+<div id="media-7">
+    <div id="media-7-items">
+        <div id="media-7-item-0"></div>
+        <div id="media-7-item-1"></div>
+        <div id="media-7-item-2"></div>
+        <div id="media-7-item-3"></div>
+        <div id="media-7-item-4"></div>
+        <div id="media-7-item-5"></div>
+        <div id="media-7-item-6"></div>
+    </div>
+    <div id="media-7-container">
+        <p id="media-7-width">Media7W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- media-8 detection group - media features (boolean or values) -->
+<div id="media-8">
+    <div id="media-8-items">
+        <div id="media-8-item-0"></div>
+        <div id="media-8-item-1"></div>
+        <div id="media-8-item-2"></div>
+        <div id="media-8-item-3"></div>
+        <div id="media-8-item-4"></div>
+        <div id="media-8-item-5"></div>
+        <div id="media-8-item-6"></div>
+    </div>
+    <div id="media-8-container">
+        <p id="media-8-width">Media8W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- media-9 detection group - media features (boolean or values) -->
+<div id="media-9">
+    <div id="media-9-items">
+        <div id="media-9-item-0"></div>
+        <div id="media-9-item-1"></div>
+        <div id="media-9-item-2"></div>
+        <div id="media-9-item-3"></div>
+        <div id="media-9-item-4"></div>
+        <div id="media-9-item-5"></div>
+        <div id="media-9-item-6"></div>
+    </div>
+    <div id="media-9-container">
+        <p id="media-9-width">Media9W</p>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- media-10 detection group - media features (boolean or values) -->
+<div id="media-10">
+    <div id="media-10-items">
+        <div id="media-10-item-0"></div>
+        <div id="media-10-item-1"></div>
+        <div id="media-10-item-2"></div>
+        <div id="media-10-item-3"></div>
+        <div id="media-10-item-4"></div>
+        <div id="media-10-item-5"></div>
+        <div id="media-10-item-6"></div>
+    </div>
+    <div id="media-10-container">
+        <p id="media-10-width">Media10W</p>
+    </div>
+</div>
+<div class="divider"></div>
 <!-- font detection -->
 <div id="font-detection">
     <div class="font-detection-wrapper">
