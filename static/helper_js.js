@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const containers = document.querySelectorAll("[id^='env-'][id$='-container']");
+    const containers = document.querySelectorAll("[id^='env-'][id$='-container'], [id^='media-'][id$='-container']");
     containers.forEach(container => {
         const width = container.offsetWidth;
         const height = container.offsetHeight;

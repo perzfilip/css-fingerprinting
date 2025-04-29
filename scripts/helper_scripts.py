@@ -192,10 +192,10 @@ if __name__ == '__main__':
     # generate_font_rules()
     # generate_start_rules(name="env-14", items=9)
     generate_css_container_measure_rules(0,
-                                         32,
                                          0,
-                                         0,
-                                         name="media-1")
+                                         10,
+                                         50,
+                                         name="env-8")
     # generate_css_viewport(1, 100, 1, 100)
     # generate_iso_strings(8704, 8959)
 
