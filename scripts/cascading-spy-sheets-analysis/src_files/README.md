@@ -1,0 +1,1 @@
+In this directory there are json files that were copied from  Leon Trampert repositary which were created during the research for https://cispa.de/en/research/publications/84162-cascading-spy-sheets-exploiting-the-complexity-of-modern-css-for-email-and-browser-fingerprinting . Original repository can be found at https://github.com/cispa/cascading-spy-sheets.
