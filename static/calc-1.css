@@ -1,0 +1,196 @@
+#calc-1 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-1-item {
+    display: grid;
+    width: calc(1px * (0.836337408516556 / sin((328660.6002077978 * pi + (169101.13197941292)) * (121897.3210943361 * 59011.5150966451 * 33744.317029065365 + 101130.22947068278 / (247623.22206646253) / 0.8113027140498161)) + e));
+    flex-grow: 0;
+}
+
+
+#calc-1-container {
+    container-name: calc-2-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-2 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-2-item {
+    display: grid;
+    width: calc(1px * (0.26773800421506166 - 47347.7351729909 / 69806.10740005101 - e * tan(pi + 54370.98221018599 / tan(145.19201052953946) * 0.44596617901697755 * 135917.42503542083) / pi));
+    flex-grow: 0;
+}
+
+#calc-2-container {
+    container-name: calc-2-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-3 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-3-item {
+    display: grid;
+    width: calc(1px * (0.09127735486254096 / 735.8453242566477 - sin(81929.39040861855 / 0.7371127642691135) * sin(pi - 0.0050916902255266905) * (pi * 56598.82715263593 - tan(138618.8207329427 - sin(87866.92300892183)) * 73963.6481315199 * sin(38350.44718330214 * 88426.60347159175 * 70748.46378042221 + e * 0.3522350515704602) - 155284.45749961227 / 76410.38662212781 / tan(0.6574289293494076 * cos(5566943.480322141) - e / 27243.048928791104)) + (e) * (0.767688465770334 - e / sin(78576.17265717337 * 357461.36174224137 + 81647.98113721207))));
+    flex-grow: 0;
+}
+
+#calc-3-container {
+    container-name: calc-3-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-4 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-4-item {
+    display: grid;
+    width: calc(1px * (pi * tan(-172362.5349671105 * cos(106590.18812615762) - -135310.96249555165 / 0.43122277199290693 - (sin(35.65965735952698) + (39092.58851640222) / 143281.34438369097) * 25952.2169060161 * (pi))));
+    flex-grow: 0;
+}
+
+#calc-4-container {
+    container-name: calc-4-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-5 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-5-item {
+    display: grid;
+    width: calc(1px * (0.7887798345182091 * sin(82189.05545839571 / 0.18517374992370605 * 0.008089403854683042) / tan(tan(109291.67664288744 * (36295.7350248317) - 204664.3786005878 - 209845.36376121573 * 0.7465927922166884) * 184123.336033595) + (sin((131293.05520239723) - 150286.96096293302 * 0.8082891888916492) / 0.777242538286373 + 0.5813473116140813) * 0.6146595270838588 * tan(0.7512196360621601 / 8514.927909941202 + (136784.9486422678) / (0.5166313732042909 * 105161.13063391473 / 0.6193476456683129) + 0.599509299499914 * 467214.32023847103)));
+    flex-grow: 0;
+}
+
+#calc-5-container {
+    container-name: calc-5-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-6 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-6-item {
+    display: grid;
+    width: calc(1px * ((819089.5583285954 / 56608.20596055245) / cos(pi + sin(76236.68535730825 / 40736.93352735403)) / 130187.78693887388 * 649103.1720475996 / sin((211870.47864979794) * 493475.8066673059)));
+    flex-grow: 0;
+}
+
+#calc-6-container {
+    container-name: calc-6-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-7 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-7-item {
+    display: grid;
+    width: calc(1px * (2177121.019011976 / 134882.69539745056 / 0.9244347715284675 - (cos(e * (191596.40883588613) + 262619.3231425485 * 274051.0595224638) / 0.328251866158098) * sin((11588.896119517485 * 32314.82891819235 * cos(20434908.45764997)) * pi * 144196.89544439805 + 0.6858788279350847 * (110257.92776979548))));
+    flex-grow: 0;
+}
+
+#calc-7-container {
+    container-name: calc-7-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-8 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-8-item {
+    display: grid;
+    width: calc(1px * (e + 3875368.0213615815 / sin(0.04519110103137791 * 0.7010521683841944 - (e * 2173041.0204142155 - 113148.70869192715 * 23930.135977992977) + 1280812.8273997805 * cos(953810.3230102585 / e - (379086.80439042306) - 380405.12721971783 / sin(137104.94121932628))) / -77576.96395318274));
+    flex-grow: 0;
+}
+
+#calc-8-container {
+    container-name: calc-8-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-9 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-9-item {
+    display: grid;
+    width: calc(1px * (tan(e / (246224.70135592142 + (13850.590343604119)) - cos(pi / -45285.84589270301 - 294211.75868571043 * 140089.91514788382) * -150374.04913732802) + sin(cos(pi / 29327.001922664764 - -1015194.7508332379 / -infinity)) * sin(382429.31002737605) - tan(0.0010620588436722755 * 0.8560699264053255 * 441999.98665663926 + 0.7504787261132151 / cos(102703.6658934925) * 69318.64221046682)));
+    flex-grow: 0;
+}
+
+#calc-9-container {
+    container-name: calc-9-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+#calc-10 {
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-10-item {
+    display: grid;
+    width: calc(1px * (tan(53755.24299585678 / sin((1343677.5353982153) * (146489.07418670834) / 146147.61869404645) * 20269.680501178154 - (159553.0371005281 - (138117.9860027999)) / pi)));
+    flex-grow: 0;
+}
+
+#calc-10-container {
+    container-name: calc-10-container;
+    container-type: size;
+    flex-grow: 1;
+}
+
+
+
+
+
+

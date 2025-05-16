@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const containers = document.querySelectorAll("[id^='env-'][id$='-container'], [id^='media-'][id$='-container']");
+    const containers = document.querySelectorAll("[id^='env-'][id$='-container'], [id^='media-'][id$='-container'], [id^='calc-'][id$='-container']");
     containers.forEach(container => {
-        const width = container.offsetWidth;
-        const height = container.offsetHeight;
+        const width = container.getBoundingClientRect().width;
+        const height = container.getBoundingClientRect().height;
         const containerId = container.id;
 
         fetch('/report-dimensions', {
