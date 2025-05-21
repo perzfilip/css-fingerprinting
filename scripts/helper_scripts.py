@@ -1,6 +1,7 @@
 import os
 import sqlite3
 from collections import defaultdict
+import calc_values
 
 
 def generate_font_rules():
@@ -178,7 +179,6 @@ def generate_css_viewport(width_start, width_end, height_start, height_end, cont
     with open(os.path.join(output_folder, output_file), "w") as f:
         f.write(css_rules)
 
-
 def generate_iso_strings(start, end, output_folder="outputs", output_file="iso_strings.txt"):
     os.makedirs(output_folder, exist_ok=True)
     iso_strings = [f"&#{i};" for i in range(start, end + 1)]
@@ -187,6 +187,25 @@ def generate_iso_strings(start, end, output_folder="outputs", output_file="iso_s
         for string in iso_strings:
             file.write(string + "\n")
 
+def generate_calc_css(arrays_dict, output_file='outputs/calc.css'):
+    def is_number(s):
+        try:
+            float(s)
+            return True
+        except ValueError:
+            return False
+
+    with open(output_file, 'w') as f:
+        for name, values in arrays_dict.items():
+            # Remove duplicates and filter numeric values
+            unique_values = sorted(set(filter(is_number, values)), key=lambda x: float(x))
+            for val in unique_values:
+                px_value = float(val)
+                f.write(f"""@container {name}-container (min-width: {px_value:.6f}px) {{
+    p#{name}-width {{
+        background-image: url("/fingerprint?{name}-width={px_value:.6f}");
+    }}
+}}\n\n""")
 
 if __name__ == '__main__':
     # generate_font_rules()
@@ -198,6 +217,8 @@ if __name__ == '__main__':
                                          name="env-8")
     # generate_css_viewport(1, 100, 1, 100)
     # generate_iso_strings(8704, 8959)
+    generate_calc_css(calc_values.calc_arrays)
+
 
 # 450.217
 # 182.967

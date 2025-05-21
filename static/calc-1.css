@@ -18,6 +18,168 @@
     flex-grow: 1;
 }
 
+@container calc-1-container (min-width: 0.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=0.000000");
+    }
+}
+
+@container calc-1-container (min-width: 0.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=0.000000");
+    }
+}
+
+@container calc-1-container (min-width: 1.765620px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.765620");
+    }
+}
+
+@container calc-1-container (min-width: 1.765625px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.765625");
+    }
+}
+
+@container calc-1-container (min-width: 1.766600px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.766600");
+    }
+}
+
+@container calc-1-container (min-width: 1.767860px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.767860");
+    }
+}
+
+@container calc-1-container (min-width: 1.769531px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.769531");
+    }
+}
+
+@container calc-1-container (min-width: 1.770833px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.770833");
+    }
+}
+
+@container calc-1-container (min-width: 1.866669px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.866669");
+    }
+}
+
+@container calc-1-container (min-width: 1.866670px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=1.866670");
+    }
+}
+
+@container calc-1-container (min-width: 5.449997px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=5.449997");
+    }
+}
+
+@container calc-1-container (min-width: 9586980.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=9586980.000000");
+    }
+}
+
+@container calc-1-container (min-width: 11184810.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=11184810.000000");
+    }
+}
+
+@container calc-1-container (min-width: 11930464.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=11930464.000000");
+    }
+}
+
+@container calc-1-container (min-width: 12201610.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=12201610.000000");
+    }
+}
+
+@container calc-1-container (min-width: 12782600.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=12782600.000000");
+    }
+}
+
+@container calc-1-container (min-width: 12782639.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=12782639.000000");
+    }
+}
+
+@container calc-1-container (min-width: 14913080.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=14913080.000000");
+    }
+}
+
+@container calc-1-container (min-width: 15790319.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=15790319.000000");
+    }
+}
+
+@container calc-1-container (min-width: 16777200.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=16777200.000000");
+    }
+}
+
+@container calc-1-container (min-width: 16777214.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=16777214.000000");
+    }
+}
+
+@container calc-1-container (min-width: 17895696.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=17895696.000000");
+    }
+}
+
+@container calc-1-container (min-width: 19173958.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=19173958.000000");
+    }
+}
+
+@container calc-1-container (min-width: 20648900.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=20648900.000000");
+    }
+}
+
+@container calc-1-container (min-width: 22369620.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=22369620.000000");
+    }
+}
+
+@container calc-1-container (min-width: 33554400.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=33554400.000000");
+    }
+}
+
+@container calc-1-container (min-width: 33554428.000000px) {
+    p#calc-1-width {
+        background-image: url("/fingerprint?calc-1-width=33554428.000000");
+    }
+}
+
 #calc-2 {
     height: 200px;
     width: fit-content;
@@ -35,6 +197,156 @@
     container-name: calc-2-container;
     container-type: size;
     flex-grow: 1;
+}
+
+@container calc-2-container (min-width: 0.000000px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=0.000000");
+    }
+}
+
+@container calc-2-container (min-width: 0.000000px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=0.000000");
+    }
+}
+
+@container calc-2-container (min-width: 0.050000px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=0.050000");
+    }
+}
+
+@container calc-2-container (min-width: 0.050003px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=0.050003");
+    }
+}
+
+@container calc-2-container (min-width: 7.921875px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.921875");
+    }
+}
+
+@container calc-2-container (min-width: 7.921880px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.921880");
+    }
+}
+
+@container calc-2-container (min-width: 7.927730px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.927730");
+    }
+}
+
+@container calc-2-container (min-width: 7.928570px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.928570");
+    }
+}
+
+@container calc-2-container (min-width: 7.929690px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.929690");
+    }
+}
+
+@container calc-2-container (min-width: 7.932292px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.932292");
+    }
+}
+
+@container calc-2-container (min-width: 7.933594px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.933594");
+    }
+}
+
+@container calc-2-container (min-width: 7.937500px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.937500");
+    }
+}
+
+@container calc-2-container (min-width: 7.937500px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.937500");
+    }
+}
+
+@container calc-2-container (min-width: 7.946429px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.946429");
+    }
+}
+
+@container calc-2-container (min-width: 7.947917px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.947917");
+    }
+}
+
+@container calc-2-container (min-width: 7.948529px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.948529");
+    }
+}
+
+@container calc-2-container (min-width: 7.948864px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.948864");
+    }
+}
+
+@container calc-2-container (min-width: 7.950000px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.950000");
+    }
+}
+
+@container calc-2-container (min-width: 7.950893px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.950893");
+    }
+}
+
+@container calc-2-container (min-width: 7.951389px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.951389");
+    }
+}
+
+@container calc-2-container (min-width: 7.951920px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.951920");
+    }
+}
+
+@container calc-2-container (min-width: 7.952380px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.952380");
+    }
+}
+
+@container calc-2-container (min-width: 7.952381px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.952381");
+    }
+}
+
+@container calc-2-container (min-width: 7.953120px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.953120");
+    }
+}
+
+@container calc-2-container (min-width: 7.953125px) {
+    p#calc-2-width {
+        background-image: url("/fingerprint?calc-2-width=7.953125");
+    }
 }
 
 #calc-3 {
@@ -56,6 +368,150 @@
     flex-grow: 1;
 }
 
+@container calc-3-container (min-width: 0.000000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=0.000000");
+    }
+}
+
+@container calc-3-container (min-width: 93.016663px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=93.016663");
+    }
+}
+
+@container calc-3-container (min-width: 93.016700px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=93.016700");
+    }
+}
+
+@container calc-3-container (min-width: 94.483300px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=94.483300");
+    }
+}
+
+@container calc-3-container (min-width: 94.483337px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=94.483337");
+    }
+}
+
+@container calc-3-container (min-width: 274.916687px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.916687");
+    }
+}
+
+@container calc-3-container (min-width: 274.919128px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.919128");
+    }
+}
+
+@container calc-3-container (min-width: 274.919647px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.919647");
+    }
+}
+
+@container calc-3-container (min-width: 274.920471px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.920471");
+    }
+}
+
+@container calc-3-container (min-width: 274.921875px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.921875");
+    }
+}
+
+@container calc-3-container (min-width: 274.922000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.922000");
+    }
+}
+
+@container calc-3-container (min-width: 274.922241px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.922241");
+    }
+}
+
+@container calc-3-container (min-width: 274.922638px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.922638");
+    }
+}
+
+@container calc-3-container (min-width: 274.923000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.923000");
+    }
+}
+
+@container calc-3-container (min-width: 274.923615px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.923615");
+    }
+}
+
+@container calc-3-container (min-width: 274.924133px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=274.924133");
+    }
+}
+
+@container calc-3-container (min-width: 279.093750px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.093750");
+    }
+}
+
+@container calc-3-container (min-width: 279.094000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.094000");
+    }
+}
+
+@container calc-3-container (min-width: 279.097000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.097000");
+    }
+}
+
+@container calc-3-container (min-width: 279.098000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.098000");
+    }
+}
+
+@container calc-3-container (min-width: 279.098969px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.098969");
+    }
+}
+
+@container calc-3-container (min-width: 279.101000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.101000");
+    }
+}
+
+@container calc-3-container (min-width: 279.101562px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.101562");
+    }
+}
+
+@container calc-3-container (min-width: 279.102000px) {
+    p#calc-3-width {
+        background-image: url("/fingerprint?calc-3-width=279.102000");
+    }
+}
+
 #calc-4 {
     height: 200px;
     width: fit-content;
@@ -73,6 +529,162 @@
     container-name: calc-4-container;
     container-type: size;
     flex-grow: 1;
+}
+
+@container calc-4-container (min-width: 0.000000px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=0.000000");
+    }
+}
+
+@container calc-4-container (min-width: 2.983330px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=2.983330");
+    }
+}
+
+@container calc-4-container (min-width: 2.983337px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=2.983337");
+    }
+}
+
+@container calc-4-container (min-width: 3.183330px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=3.183330");
+    }
+}
+
+@container calc-4-container (min-width: 3.183334px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=3.183334");
+    }
+}
+
+@container calc-4-container (min-width: 3.383330px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=3.383330");
+    }
+}
+
+@container calc-4-container (min-width: 3.383331px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=3.383331");
+    }
+}
+
+@container calc-4-container (min-width: 6.484375px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.484375");
+    }
+}
+
+@container calc-4-container (min-width: 6.484380px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.484380");
+    }
+}
+
+@container calc-4-container (min-width: 6.489583px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.489583");
+    }
+}
+
+@container calc-4-container (min-width: 6.490380px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.490380");
+    }
+}
+
+@container calc-4-container (min-width: 6.491070px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.491070");
+    }
+}
+
+@container calc-4-container (min-width: 6.491072px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.491072");
+    }
+}
+
+@container calc-4-container (min-width: 6.491667px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.491667");
+    }
+}
+
+@container calc-4-container (min-width: 6.492188px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.492188");
+    }
+}
+
+@container calc-4-container (min-width: 6.492190px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.492190");
+    }
+}
+
+@container calc-4-container (min-width: 6.492647px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.492647");
+    }
+}
+
+@container calc-4-container (min-width: 6.493056px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.493056");
+    }
+}
+
+@container calc-4-container (min-width: 6.494048px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.494048");
+    }
+}
+
+@container calc-4-container (min-width: 6.494050px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.494050");
+    }
+}
+
+@container calc-4-container (min-width: 6.494318px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.494318");
+    }
+}
+
+@container calc-4-container (min-width: 6.494444px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.494444");
+    }
+}
+
+@container calc-4-container (min-width: 6.494792px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.494792");
+    }
+}
+
+@container calc-4-container (min-width: 6.495120px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.495120");
+    }
+}
+
+@container calc-4-container (min-width: 6.495536px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.495536");
+    }
+}
+
+@container calc-4-container (min-width: 6.496094px) {
+    p#calc-4-width {
+        background-image: url("/fingerprint?calc-4-width=6.496094");
+    }
 }
 
 #calc-5 {
@@ -94,6 +706,162 @@
     flex-grow: 1;
 }
 
+@container calc-5-container (min-width: 0.000000px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.000000");
+    }
+}
+
+@container calc-5-container (min-width: 0.000000px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.000000");
+    }
+}
+
+@container calc-5-container (min-width: 0.359375px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.359375");
+    }
+}
+
+@container calc-5-container (min-width: 0.364583px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.364583");
+    }
+}
+
+@container calc-5-container (min-width: 0.365385px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.365385");
+    }
+}
+
+@container calc-5-container (min-width: 0.366071px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.366071");
+    }
+}
+
+@container calc-5-container (min-width: 0.366667px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.366667");
+    }
+}
+
+@container calc-5-container (min-width: 0.367188px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.367188");
+    }
+}
+
+@container calc-5-container (min-width: 0.367188px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.367188");
+    }
+}
+
+@container calc-5-container (min-width: 0.367647px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.367647");
+    }
+}
+
+@container calc-5-container (min-width: 0.368056px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.368056");
+    }
+}
+
+@container calc-5-container (min-width: 0.369048px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.369048");
+    }
+}
+
+@container calc-5-container (min-width: 0.369048px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.369048");
+    }
+}
+
+@container calc-5-container (min-width: 0.369318px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.369318");
+    }
+}
+
+@container calc-5-container (min-width: 0.369792px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.369792");
+    }
+}
+
+@container calc-5-container (min-width: 0.370536px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.370536");
+    }
+}
+
+@container calc-5-container (min-width: 0.500000px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.500000");
+    }
+}
+
+@container calc-5-container (min-width: 0.500000px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.500000");
+    }
+}
+
+@container calc-5-container (min-width: 0.593750px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.593750");
+    }
+}
+
+@container calc-5-container (min-width: 0.593750px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.593750");
+    }
+}
+
+@container calc-5-container (min-width: 0.597656px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.597656");
+    }
+}
+
+@container calc-5-container (min-width: 0.598214px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.598214");
+    }
+}
+
+@container calc-5-container (min-width: 0.601190px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.601190");
+    }
+}
+
+@container calc-5-container (min-width: 0.601562px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.601562");
+    }
+}
+
+@container calc-5-container (min-width: 0.601562px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.601562");
+    }
+}
+
+@container calc-5-container (min-width: 0.604167px) {
+    p#calc-5-width {
+        background-image: url("/fingerprint?calc-5-width=0.604167");
+    }
+}
+
 #calc-6 {
     height: 200px;
     width: fit-content;
@@ -111,6 +879,168 @@
     container-name: calc-6-container;
     container-type: size;
     flex-grow: 1;
+}
+
+@container calc-6-container (min-width: 0.000000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=0.000000");
+    }
+}
+
+@container calc-6-container (min-width: 938.609000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.609000");
+    }
+}
+
+@container calc-6-container (min-width: 938.609375px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.609375");
+    }
+}
+
+@container calc-6-container (min-width: 938.614624px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.614624");
+    }
+}
+
+@container calc-6-container (min-width: 938.615000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.615000");
+    }
+}
+
+@container calc-6-container (min-width: 938.616089px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.616089");
+    }
+}
+
+@container calc-6-container (min-width: 938.616699px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.616699");
+    }
+}
+
+@container calc-6-container (min-width: 938.617000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.617000");
+    }
+}
+
+@container calc-6-container (min-width: 938.617188px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.617188");
+    }
+}
+
+@container calc-6-container (min-width: 938.617676px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.617676");
+    }
+}
+
+@container calc-6-container (min-width: 938.618042px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.618042");
+    }
+}
+
+@container calc-6-container (min-width: 938.619000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.619000");
+    }
+}
+
+@container calc-6-container (min-width: 938.619080px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.619080");
+    }
+}
+
+@container calc-6-container (min-width: 938.619324px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.619324");
+    }
+}
+
+@container calc-6-container (min-width: 938.619812px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.619812");
+    }
+}
+
+@container calc-6-container (min-width: 938.620605px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.620605");
+    }
+}
+
+@container calc-6-container (min-width: 938.622253px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.622253");
+    }
+}
+
+@container calc-6-container (min-width: 938.671875px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.671875");
+    }
+}
+
+@container calc-6-container (min-width: 938.672000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.672000");
+    }
+}
+
+@container calc-6-container (min-width: 938.679000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.679000");
+    }
+}
+
+@container calc-6-container (min-width: 938.680000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.680000");
+    }
+}
+
+@container calc-6-container (min-width: 938.681000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.681000");
+    }
+}
+
+@container calc-6-container (min-width: 938.682312px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.682312");
+    }
+}
+
+@container calc-6-container (min-width: 938.683594px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.683594");
+    }
+}
+
+@container calc-6-container (min-width: 938.685000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=938.685000");
+    }
+}
+
+@container calc-6-container (min-width: 2107.980000px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=2107.980000");
+    }
+}
+
+@container calc-6-container (min-width: 2107.983398px) {
+    p#calc-6-width {
+        background-image: url("/fingerprint?calc-6-width=2107.983398");
+    }
 }
 
 #calc-7 {
@@ -132,6 +1062,156 @@
     flex-grow: 1;
 }
 
+@container calc-7-container (min-width: 0.000000px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=0.000000");
+    }
+}
+
+@container calc-7-container (min-width: 16.500000px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=16.500000");
+    }
+}
+
+@container calc-7-container (min-width: 16.500000px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=16.500000");
+    }
+}
+
+@container calc-7-container (min-width: 19.593750px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.593750");
+    }
+}
+
+@container calc-7-container (min-width: 19.593800px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.593800");
+    }
+}
+
+@container calc-7-container (min-width: 19.598200px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.598200");
+    }
+}
+
+@container calc-7-container (min-width: 19.598959px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.598959");
+    }
+}
+
+@container calc-7-container (min-width: 19.599600px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.599600");
+    }
+}
+
+@container calc-7-container (min-width: 19.601200px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.601200");
+    }
+}
+
+@container calc-7-container (min-width: 19.601562px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.601562");
+    }
+}
+
+@container calc-7-container (min-width: 19.601600px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.601600");
+    }
+}
+
+@container calc-7-container (min-width: 19.640600px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.640600");
+    }
+}
+
+@container calc-7-container (min-width: 19.640625px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.640625");
+    }
+}
+
+@container calc-7-container (min-width: 19.644200px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.644200");
+    }
+}
+
+@container calc-7-container (min-width: 19.645834px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.645834");
+    }
+}
+
+@container calc-7-container (min-width: 19.647058px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.647058");
+    }
+}
+
+@container calc-7-container (min-width: 19.647728px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.647728");
+    }
+}
+
+@container calc-7-container (min-width: 19.648400px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.648400");
+    }
+}
+
+@container calc-7-container (min-width: 19.648438px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.648438");
+    }
+}
+
+@container calc-7-container (min-width: 19.648800px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.648800");
+    }
+}
+
+@container calc-7-container (min-width: 19.648809px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.648809");
+    }
+}
+
+@container calc-7-container (min-width: 19.650000px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.650000");
+    }
+}
+
+@container calc-7-container (min-width: 19.650002px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.650002");
+    }
+}
+
+@container calc-7-container (min-width: 19.651043px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.651043");
+    }
+}
+
+@container calc-7-container (min-width: 19.651787px) {
+    p#calc-7-width {
+        background-image: url("/fingerprint?calc-7-width=19.651787");
+    }
+}
+
 #calc-8 {
     height: 200px;
     width: fit-content;
@@ -149,6 +1229,150 @@
     container-name: calc-8-container;
     container-type: size;
     flex-grow: 1;
+}
+
+@container calc-8-container (min-width: 0.000000px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=0.000000");
+    }
+}
+
+@container calc-8-container (min-width: 0.000000px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=0.000000");
+    }
+}
+
+@container calc-8-container (min-width: 59.546875px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.546875");
+    }
+}
+
+@container calc-8-container (min-width: 59.546900px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.546900");
+    }
+}
+
+@container calc-8-container (min-width: 59.551472px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.551472");
+    }
+}
+
+@container calc-8-container (min-width: 59.552086px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.552086");
+    }
+}
+
+@container calc-8-container (min-width: 59.553574px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.553574");
+    }
+}
+
+@container calc-8-container (min-width: 59.553600px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.553600");
+    }
+}
+
+@container calc-8-container (min-width: 59.554688px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.554688");
+    }
+}
+
+@container calc-8-container (min-width: 59.554700px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.554700");
+    }
+}
+
+@container calc-8-container (min-width: 59.555557px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.555557");
+    }
+}
+
+@container calc-8-container (min-width: 59.556820px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.556820");
+    }
+}
+
+@container calc-8-container (min-width: 59.557293px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.557293");
+    }
+}
+
+@container calc-8-container (min-width: 59.557700px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.557700");
+    }
+}
+
+@container calc-8-container (min-width: 59.558037px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.558037");
+    }
+}
+
+@container calc-8-container (min-width: 59.558338px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=59.558338");
+    }
+}
+
+@container calc-8-container (min-width: 139.093750px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.093750");
+    }
+}
+
+@container calc-8-container (min-width: 139.094000px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.094000");
+    }
+}
+
+@container calc-8-container (min-width: 139.096000px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.096000");
+    }
+}
+
+@container calc-8-container (min-width: 139.098000px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.098000");
+    }
+}
+
+@container calc-8-container (min-width: 139.098969px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.098969");
+    }
+}
+
+@container calc-8-container (min-width: 139.101000px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.101000");
+    }
+}
+
+@container calc-8-container (min-width: 139.101562px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.101562");
+    }
+}
+
+@container calc-8-container (min-width: 139.102000px) {
+    p#calc-8-width {
+        background-image: url("/fingerprint?calc-8-width=139.102000");
+    }
 }
 
 #calc-9 {
@@ -170,6 +1394,156 @@
     flex-grow: 1;
 }
 
+@container calc-9-container (min-width: 0.000000px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.000000");
+    }
+}
+
+@container calc-9-container (min-width: 0.202148px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.202148");
+    }
+}
+
+@container calc-9-container (min-width: 0.202381px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.202381");
+    }
+}
+
+@container calc-9-container (min-width: 0.203125px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.203125");
+    }
+}
+
+@container calc-9-container (min-width: 0.205357px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.205357");
+    }
+}
+
+@container calc-9-container (min-width: 0.207031px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.207031");
+    }
+}
+
+@container calc-9-container (min-width: 0.312500px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.312500");
+    }
+}
+
+@container calc-9-container (min-width: 0.312500px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.312500");
+    }
+}
+
+@container calc-9-container (min-width: 0.320312px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.320312");
+    }
+}
+
+@container calc-9-container (min-width: 0.320312px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.320312");
+    }
+}
+
+@container calc-9-container (min-width: 0.321429px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.321429");
+    }
+}
+
+@container calc-9-container (min-width: 0.322222px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.322222");
+    }
+}
+
+@container calc-9-container (min-width: 0.322917px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.322917");
+    }
+}
+
+@container calc-9-container (min-width: 0.323529px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.323529");
+    }
+}
+
+@container calc-9-container (min-width: 0.323864px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.323864");
+    }
+}
+
+@container calc-9-container (min-width: 0.325000px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.325000");
+    }
+}
+
+@container calc-9-container (min-width: 0.325893px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.325893");
+    }
+}
+
+@container calc-9-container (min-width: 0.326389px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.326389");
+    }
+}
+
+@container calc-9-container (min-width: 0.326923px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.326923");
+    }
+}
+
+@container calc-9-container (min-width: 0.327381px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.327381");
+    }
+}
+
+@container calc-9-container (min-width: 0.327381px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=0.327381");
+    }
+}
+
+@container calc-9-container (min-width: 5.083328px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=5.083328");
+    }
+}
+
+@container calc-9-container (min-width: 5.083330px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=5.083330");
+    }
+}
+
+@container calc-9-container (min-width: 5.383330px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=5.383330");
+    }
+}
+
+@container calc-9-container (min-width: 5.383331px) {
+    p#calc-9-width {
+        background-image: url("/fingerprint?calc-9-width=5.383331");
+    }
+}
+
 #calc-10 {
     height: 200px;
     width: fit-content;
@@ -188,6 +1562,164 @@
     container-type: size;
     flex-grow: 1;
 }
+
+
+@container calc-10-container (min-width: 0.000000px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.000000");
+    }
+}
+
+@container calc-10-container (min-width: 0.016663px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.016663");
+    }
+}
+
+@container calc-10-container (min-width: 0.016667px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.016667");
+    }
+}
+
+@container calc-10-container (min-width: 0.232143px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.232143");
+    }
+}
+
+@container calc-10-container (min-width: 0.234375px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.234375");
+    }
+}
+
+@container calc-10-container (min-width: 0.237305px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.237305");
+    }
+}
+
+@container calc-10-container (min-width: 0.238095px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.238095");
+    }
+}
+
+@container calc-10-container (min-width: 0.238281px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.238281");
+    }
+}
+
+@container calc-10-container (min-width: 0.239583px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=0.239583");
+    }
+}
+
+@container calc-10-container (min-width: 5.593750px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.593750");
+    }
+}
+
+@container calc-10-container (min-width: 5.593750px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.593750");
+    }
+}
+
+@container calc-10-container (min-width: 5.596150px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.596150");
+    }
+}
+
+@container calc-10-container (min-width: 5.597222px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.597222");
+    }
+}
+
+@container calc-10-container (min-width: 5.598215px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.598215");
+    }
+}
+
+@container calc-10-container (min-width: 5.598958px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.598958");
+    }
+}
+
+@container calc-10-container (min-width: 5.600000px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.600000");
+    }
+}
+
+@container calc-10-container (min-width: 5.600000px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.600000");
+    }
+}
+
+@container calc-10-container (min-width: 5.601190px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.601190");
+    }
+}
+
+@container calc-10-container (min-width: 5.601191px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.601191");
+    }
+}
+
+@container calc-10-container (min-width: 5.601560px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.601560");
+    }
+}
+
+@container calc-10-container (min-width: 5.601562px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.601562");
+    }
+}
+
+@container calc-10-container (min-width: 5.602273px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.602273");
+    }
+}
+
+@container calc-10-container (min-width: 5.602679px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.602679");
+    }
+}
+
+@container calc-10-container (min-width: 5.602941px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=5.602941");
+    }
+}
+
+@container calc-10-container (min-width: 50.033300px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=50.033300");
+    }
+}
+
+@container calc-10-container (min-width: 50.033340px) {
+    p#calc-10-width {
+        background-image: url("/fingerprint?calc-10-width=50.033340");
+    }
+}
+
 
 
 
