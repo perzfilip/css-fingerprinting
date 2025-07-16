@@ -1,0 +1,45 @@
+"
+device_id","unique_fingerprints
+","browser_versions
+","fingerprint_per_version
+"
+OS X-Big Sur-chrome,6,29,0.206897
+OS X-Big Sur-edge,6,30,0.200000
+OS X-Big Sur-firefox,8,28,0.285714
+OS X-Catalina-chrome,5,23,0.217391
+OS X-Catalina-edge,5,18,0.277778
+OS X-Catalina-firefox,7,27,0.259259
+OS X-High Sierra-chrome,4,12,0.333333
+OS X-High Sierra-edge,5,11,0.454545
+OS X-High Sierra-firefox,4,6,0.666667
+OS X-Mojave-chrome,3,12,0.250000
+OS X-Mojave-edge,3,12,0.250000
+OS X-Mojave-firefox,4,4,1.000000
+OS X-Monterey-chrome,6,27,0.222222
+OS X-Monterey-edge,6,30,0.200000
+OS X-Monterey-firefox,8,24,0.333333
+OS X-Sequoia-chrome,5,25,0.200000
+OS X-Sequoia-edge,5,25,0.200000
+OS X-Sequoia-firefox,9,26,0.346154
+OS X-Sierra-firefox,3,5,0.600000
+OS X-Sonoma-chrome,6,30,0.200000
+OS X-Sonoma-edge,6,31,0.193548
+OS X-Sonoma-firefox,8,24,0.333333
+OS X-Ventura-chrome,6,30,0.200000
+OS X-Ventura-edge,6,28,0.214286
+OS X-Ventura-firefox,9,28,0.321429
+Windows-10-chrome,8,29,0.275862
+Windows-10-edge,9,28,0.321429
+Windows-10-firefox,8,28,0.285714
+Windows-11-chrome,8,27,0.296296
+Windows-11-edge,8,30,0.266667
+Windows-11-firefox,7,28,0.250000
+Windows-7-chrome,1,5,0.200000
+Windows-7-edge,1,5,0.200000
+Windows-7-firefox,4,6,0.666667
+Windows-8-chrome,1,4,0.250000
+Windows-8-edge,1,3,0.333333
+Windows-8-firefox,4,6,0.666667
+Windows-8.1-chrome,1,5,0.200000
+Windows-8.1-edge,1,5,0.200000
+Windows-8.1-firefox,4,6,0.666667

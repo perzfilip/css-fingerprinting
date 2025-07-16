@@ -63,8 +63,12 @@ def count_elements(input_file):
 if __name__ == '__main__':
     # Usage
     input_file = 'browserstack_tests/browsers.json'  # Change to your input filename
-    output_file = 'browserstack_tests/browsers_cleaned_3.json'  # Change to your desired output filename
+    output_file = 'browserstack_tests/browsers_cleaned_test_ignore.json'  # Change to your desired output filename
 
-    # remove_null_values(input_file, output_file)
+    remove_null_values(input_file, output_file)
     # print(f'Cleaned JSON saved to {output_file}')
+    print(f'Input file: {input_file}')
+    count_elements(input_file)
+    print("============")
+    print(f"Output file: {output_file}")
     count_elements(output_file)
